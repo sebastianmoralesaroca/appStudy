@@ -1,0 +1,122 @@
+.loginBody {
+    background-color: midnightblue;
+
+    .loginContPricipal {
+        width:100%;
+        text-align:center;
+        margin-top:40px;
+
+        .loginTitle {
+            font-family:sans-serif;
+            font-size:35px;
+            font-weight:600;
+            color:whitesmoke;
+        }
+
+        .loginText1 {
+            font-family:sans-serif;
+            font-size:20px;
+            font-weight:500;
+            color:grey;
+            margin-top:20px;
+        }
+
+        .loginContSecond {
+            width:600px;
+            margin:auto;
+            margin-top:20px;
+            display:grid;
+            grid-template-columns:repeat(3, 1fr);
+            grid-template-rows:repeat(2, 1fr);
+
+            .loginImgParents {
+                grid-column:1;
+                grid-row:1;
+                @include mixLoginImg;
+            }
+
+            .loginSpanParents {
+                grid-column:1;
+                grid-row:2;
+                @include mixSpanTextImg;
+            }
+
+            .loginImgStudent {
+                grid-column:2;
+                grid-row:1;
+                @include mixLoginImg;
+            }
+
+            .loginSpanStudent {
+                grid-column:2;
+                grid-row:2;
+                @include mixSpanTextImg;
+            }
+
+            .loginImgTeacher {
+                grid-column:3;
+                grid-row:1;
+                @include mixLoginImg;
+            }
+
+            .loginSpanTeacher {
+                grid-column:3;
+                grid-row:2;
+                @include mixSpanTextImg;
+            }
+        }
+
+        .loginForm {
+            width:500px;
+            height:450px;
+            margin:auto;
+            margin-top:-30px;
+            display:grid;
+            grid-template-rows:repeat(6, 1fr);
+
+            .loginUsername {
+                grid-row:1;
+                @include mixLoginForm;
+            }
+
+            .loginPassword {
+                grid-row:2;
+                @include mixLoginForm;
+            }
+
+            .loginConfirPassword {
+                grid-row:3;
+                @include mixLoginForm;
+            }
+
+            .loginSignin {
+                grid-row:5;
+                background-color:orange;
+                border:none;
+                border-radius:35px;
+                font-family:sans-serif;
+                font-size:20px;
+                font-weight:bold;
+                color:whitesmoke;
+                letter-spacing: 2px;
+            }
+
+            .loginText2 {
+                grid-row:6;
+                font-family:sans-serif;
+                font-size:15px;
+                font-weight:400;
+                color:grey;
+                margin-top:20px;
+
+
+                .loginText2A {
+                    font-family:sans-serif;
+                    font-size:15px;
+                    font-weight:400;
+                    color:orange;
+                }
+            }
+        }
+    }
+}

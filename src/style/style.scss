@@ -1,7 +1,9 @@
 // base
 @import "./base/defect";
+@import "./base/mediaqueris";
 
 //utilities
+@import "./utilities/loginUtilities";
 
 //components
 @import "./components/btnMenu";
@@ -10,3 +12,8 @@
 
 // layout
 @import "./layout/home" ;
+@import "./layout/loginLayout";
+@import "./layout/index" ;
+
+//mediaqueris
+@import "./media/loginMedia";

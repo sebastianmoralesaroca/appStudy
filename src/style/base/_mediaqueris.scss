@@ -1,0 +1,24 @@
+$media-small-xs: 200px;
+$media-small: 575px;
+$media-medium: 990px;
+$media-tall: 1200px;
+
+/*
+
+
+// Media Desktop Tall
+@media screen and (min-width: $media-tall)  {}
+
+// Media Desktop Small
+@media screen and (min-width: $media-medium) and (max-width: $media-tall) and (orientation:portrait) {}
+
+// Media Tablet
+@media screen and (min-width: $media-small) and (max-width: $media-medium) and (orientation:portrait) {}
+
+// Media Mobile Default
+@media screen and (max-width: $media-small) and (orientation:portrait) {}
+
+// Media Movil Rotate
+@media screen and (min-width: $media-small-xs) and (max-width: $media-tall) and (orientation:landscape) {}
+
+*/

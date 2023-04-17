@@ -1,0 +1,29 @@
+@mixin mixLoginImg {
+    margin: auto;
+    width: 80px;
+    height: 80px;
+    border: solid 2px white;
+    border-radius: 50%;
+    background-color: orange;
+}
+
+@mixin mixSpanTextImg {
+    font-family: sans-serif;
+    font-size: 17px;
+    font-weight: bold;
+    color: orange;
+    margin-top: 10px;
+}
+
+@mixin mixLoginForm {
+    background:transparent;
+    border:solid 2px grey;
+    border-radius:15px;
+    font-family:sans-serif;
+    font-size:17px;
+    font-weight:400;
+    letter-spacing: 2px;
+    color:grey;
+    padding: 20px;
+    margin-top:20px;
+}

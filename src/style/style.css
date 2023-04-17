@@ -3,8 +3,25 @@
   padding: 0px;
   text-decoration: none;
   list-style-type: none;
-}
+} /*
 
+
+// Media Desktop Tall
+@media screen and (min-width: $media-tall)  {}
+
+// Media Desktop Small
+@media screen and (min-width: $media-medium) and (max-width: $media-tall) and (orientation:portrait) {}
+
+// Media Tablet
+@media screen and (min-width: $media-small) and (max-width: $media-medium) and (orientation:portrait) {}
+
+// Media Mobile Default
+@media screen and (max-width: $media-small) and (orientation:portrait) {}
+
+// Media Movil Rotate
+@media screen and (min-width: $media-small-xs) and (max-width: $media-tall) and (orientation:landscape) {}
+
+*/
 .body .nav1 {
   text-align: end;
 }
@@ -76,4 +93,227 @@
   font-size: 17px;
   font-weight: 400;
   color: black;
+}
+
+.loginBody {
+  background-color: midnightblue;
+}
+.loginBody .loginContPricipal {
+  width: 100%;
+  text-align: center;
+  margin-top: 40px;
+}
+.loginBody .loginContPricipal .loginTitle {
+  font-family: sans-serif;
+  font-size: 35px;
+  font-weight: 600;
+  color: whitesmoke;
+}
+.loginBody .loginContPricipal .loginText1 {
+  font-family: sans-serif;
+  font-size: 20px;
+  font-weight: 500;
+  color: grey;
+  margin-top: 20px;
+}
+.loginBody .loginContPricipal .loginContSecond {
+  width: 600px;
+  margin: auto;
+  margin-top: 20px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+  grid-template-columns: repeat(3, 1fr);
+  -ms-grid-rows: (1fr)[2];
+  grid-template-rows: repeat(2, 1fr);
+}
+.loginBody .loginContPricipal .loginContSecond > *:nth-child(1) {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+}
+.loginBody .loginContPricipal .loginContSecond > *:nth-child(2) {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+}
+.loginBody .loginContPricipal .loginContSecond > *:nth-child(3) {
+  -ms-grid-row: 1;
+  -ms-grid-column: 3;
+}
+.loginBody .loginContPricipal .loginContSecond > *:nth-child(4) {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+}
+.loginBody .loginContPricipal .loginContSecond > *:nth-child(5) {
+  -ms-grid-row: 2;
+  -ms-grid-column: 2;
+}
+.loginBody .loginContPricipal .loginContSecond > *:nth-child(6) {
+  -ms-grid-row: 2;
+  -ms-grid-column: 3;
+}
+.loginBody .loginContPricipal .loginContSecond .loginImgParents {
+  -ms-grid-column: 1;
+  grid-column: 1;
+  -ms-grid-row: 1;
+  grid-row: 1;
+  margin: auto;
+  width: 80px;
+  height: 80px;
+  border: solid 2px white;
+  border-radius: 50%;
+  background-color: orange;
+}
+.loginBody .loginContPricipal .loginContSecond .loginSpanParents {
+  -ms-grid-column: 1;
+  grid-column: 1;
+  -ms-grid-row: 2;
+  grid-row: 2;
+  font-family: sans-serif;
+  font-size: 17px;
+  font-weight: bold;
+  color: orange;
+  margin-top: 10px;
+}
+.loginBody .loginContPricipal .loginContSecond .loginImgStudent {
+  -ms-grid-column: 2;
+  grid-column: 2;
+  -ms-grid-row: 1;
+  grid-row: 1;
+  margin: auto;
+  width: 80px;
+  height: 80px;
+  border: solid 2px white;
+  border-radius: 50%;
+  background-color: orange;
+}
+.loginBody .loginContPricipal .loginContSecond .loginSpanStudent {
+  -ms-grid-column: 2;
+  grid-column: 2;
+  -ms-grid-row: 2;
+  grid-row: 2;
+  font-family: sans-serif;
+  font-size: 17px;
+  font-weight: bold;
+  color: orange;
+  margin-top: 10px;
+}
+.loginBody .loginContPricipal .loginContSecond .loginImgTeacher {
+  -ms-grid-column: 3;
+  grid-column: 3;
+  -ms-grid-row: 1;
+  grid-row: 1;
+  margin: auto;
+  width: 80px;
+  height: 80px;
+  border: solid 2px white;
+  border-radius: 50%;
+  background-color: orange;
+}
+.loginBody .loginContPricipal .loginContSecond .loginSpanTeacher {
+  -ms-grid-column: 3;
+  grid-column: 3;
+  -ms-grid-row: 2;
+  grid-row: 2;
+  font-family: sans-serif;
+  font-size: 17px;
+  font-weight: bold;
+  color: orange;
+  margin-top: 10px;
+}
+.loginBody .loginContPricipal .loginForm {
+  width: 500px;
+  height: 450px;
+  margin: auto;
+  margin-top: -30px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: (1fr)[6];
+  grid-template-rows: repeat(6, 1fr);
+}
+.loginBody .loginContPricipal .loginForm .loginUsername {
+  -ms-grid-row: 1;
+  grid-row: 1;
+  background: transparent;
+  border: solid 2px grey;
+  border-radius: 15px;
+  font-family: sans-serif;
+  font-size: 17px;
+  font-weight: 400;
+  letter-spacing: 2px;
+  color: grey;
+  padding: 20px;
+  margin-top: 20px;
+}
+.loginBody .loginContPricipal .loginForm .loginPassword {
+  -ms-grid-row: 2;
+  grid-row: 2;
+  background: transparent;
+  border: solid 2px grey;
+  border-radius: 15px;
+  font-family: sans-serif;
+  font-size: 17px;
+  font-weight: 400;
+  letter-spacing: 2px;
+  color: grey;
+  padding: 20px;
+  margin-top: 20px;
+}
+.loginBody .loginContPricipal .loginForm .loginConfirPassword {
+  -ms-grid-row: 3;
+  grid-row: 3;
+  background: transparent;
+  border: solid 2px grey;
+  border-radius: 15px;
+  font-family: sans-serif;
+  font-size: 17px;
+  font-weight: 400;
+  letter-spacing: 2px;
+  color: grey;
+  padding: 20px;
+  margin-top: 20px;
+}
+.loginBody .loginContPricipal .loginForm .loginSignin {
+  -ms-grid-row: 5;
+  grid-row: 5;
+  background-color: orange;
+  border: none;
+  border-radius: 35px;
+  font-family: sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+  color: whitesmoke;
+  letter-spacing: 2px;
+}
+.loginBody .loginContPricipal .loginForm .loginText2 {
+  -ms-grid-row: 6;
+  grid-row: 6;
+  font-family: sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  color: grey;
+  margin-top: 20px;
+}
+.loginBody .loginContPricipal .loginForm .loginText2 .loginText2A {
+  font-family: sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  color: orange;
+}
+
+@media screen and (max-width: 575px) and (orientation: portrait) {
+  .loginBody .loginContPricipal {
+    margin-top: 20px;
+  }
+  .loginBody .loginContPricipal .loginTitle {
+    font-size: 30px;
+  }
+  .loginBody .loginContPricipal .loginText1 {
+    font-size: 18px;
+  }
+  .loginBody .loginContPricipal .loginContSecond {
+    width: 90%;
+  }
+  .loginBody .loginContPricipal .loginForm {
+    width: 80%;
+  }
 }
