@@ -1,0 +1,55 @@
+@mixin mixIndexHeaderBtn {
+    width:25px;
+    height:25px;
+
+    img {
+        width:17px;
+        height:17px;
+    }
+}
+
+@mixin mixIndexNavBtn {
+    border:none;
+    border-radius:5px;
+    background:transparent;
+    font-family:sans-serif;
+    font-size:17px;
+    font-weight:500;
+    color:whitesmoke;
+    display:block;
+    text-align:left;
+    width: 170px;
+    margin-left:10px;
+    padding:15px;
+
+    img {
+        width:15px;
+        height:15px;
+        margin-right:5px;
+    }
+}
+
+@mixin mixIndexcontSecondDiv {
+    padding: 10px;
+    margin-bottom:10px;
+    border-radius:10px;
+
+    .indexcontSecondDivImg {
+        display:inline;
+        width:30px;
+        height:30px;
+        vertical-align:bottom;
+    }
+
+        .indexcontSecondDivTitle {
+            display:inline;
+            font-family:sans-serif;
+            font-size:25px;
+            font-weight:bold;
+            color:black;
+        }
+
+        .indexcontSecondDivText {
+            display:block;
+        }
+}
