@@ -1,4 +1,4 @@
-.loginBody {
+.body {
     background-color: midnightblue;
 
     .loginContPricipal {
@@ -118,6 +118,9 @@
                     color:orange;
                 }
             }
+        }
+        .buttonEnter {
+            @include mixButtonEnter;
         }
     }
 }

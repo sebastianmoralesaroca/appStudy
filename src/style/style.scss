@@ -5,16 +5,14 @@
 //utilities
 
 //components
-@import "./components/btnMenu";
-@import "./components/indexComponents";
 @import "./components/loginComponents";
 
 //theme
 
 // layout
-@import "./layout/home" ;
 @import "./layout/loginLayout";
-@import "./layout/indexLayout" ;
+@import "./layout/header";
+@import "./layout/loginLayout";
 
 //mediaqueris
 @import "./media/loginMedia";
