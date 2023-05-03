@@ -1,0 +1,10 @@
+@mixin mixBtnNoti{
+    background:transparent;
+    padding: 7px;
+    border:0px solid white;
+    border-radius: 50%;
+    .headerImgBtnNoti {
+        width:20px;
+        height:20px;
+    }
+}

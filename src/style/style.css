@@ -23,7 +23,7 @@
 
 */
 .body {
-  background-color: midnightblue;
+  background-color: #2b006e;
 }
 .body .loginContPricipal {
   width: 100%;
@@ -218,29 +218,92 @@
 }
 
 .body .heraderCont {
-  width: 100%;
-  height: 70px;
-  background-color: blue;
+  width: 98%;
+  padding-left: 1.25rem;
+  height: 4.375rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
-.body .heraderCont .headerLogo1 {
+.body .heraderCont .headerDiv1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-left: 3.125rem;
+  height: 100%;
+}
+.body .heraderCont .headerDiv1 .headerLogo1 {
+  width: 2.5rem;
+  height: 2.5rem;
+  margin-right: 1.25rem;
+}
+.body .heraderCont .headerDiv1 .headerLogo2 {
+  font-family: sans-serif;
+  font-size: 1.875rem;
+  font-weight: 700;
+  color: #ff9a00;
+  display: inline;
+  margin-right: 0.4375rem;
+}
+.body .heraderCont .headerDiv1 .headerLogo3 {
+  font-family: sans-serif;
+  font-size: 1.875rem;
+  font-weight: 700;
+  color: #ff9a00;
+  display: inline;
+}
+.body .heraderCont .headerDiv2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-right: 3.125rem;
+}
+.body .heraderCont .headerDiv2 .headerBtnMessage {
+  background: transparent;
+  padding: 7px;
+  border: 0px solid white;
+  border-radius: 50%;
+}
+.body .heraderCont .headerDiv2 .headerBtnMessage .headerImgBtnNoti {
   width: 20px;
   height: 20px;
 }
-.body .heraderCont .headerLogo2 {
-  font-family: sans-serif;
-  font-size: 20px;
-  font-weight: 700;
-  color: orange;
+.body .heraderCont .headerDiv2 .headerBtnNoti {
+  margin-left: 0.625rem;
+  background: transparent;
+  padding: 7px;
+  border: 0px solid white;
+  border-radius: 50%;
 }
-.body .heraderCont .headerLogo3 {
+.body .heraderCont .headerDiv2 .headerBtnNoti .headerImgBtnNoti {
+  width: 20px;
+  height: 20px;
+}
+.body .heraderCont .headerDiv2 .headerNamePerson {
   font-family: sans-serif;
-  font-size: 20px;
-  font-weight: 700;
-  color: orange;
+  font-size: 1.25rem;
+  font-weight: 400;
+  color: #f7f7f7;
+  display: inline;
+  margin-left: 3.125rem;
+}
+.body .heraderCont .headerDiv2 .headerImgPerson {
+  width: 2.5rem;
+  height: 2.5rem;
+  margin-left: 1.25rem;
 }
 
 .body {
-  background-color: midnightblue;
+  background-color: #2b006e;
 }
 .body .loginContPricipal {
   width: 100%;
@@ -432,6 +495,108 @@
   height: 45px;
   margin: auto;
   margin-top: -30px;
+}
+
+.mainContPrin {
+  height: 40.625rem;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 15% 65% 20%;
+  grid-template-columns: 15% 65% 20%;
+}
+.mainContPrin .mainMenu {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: (30px)[10];
+  grid-template-rows: repeat(10, 30px);
+  height: 90%;
+  margin-top: 3.125rem;
+}
+.mainContPrin .mainDivPrin {
+  background-color: #f7f7f7;
+  height: 100%;
+  border-radius: 10px 0px 0px 10px;
+}
+.mainContPrin .mainDivPrin .mainWelcome {
+  width: 91%;
+  height: 7.938rem;
+  background-color: #ff9a00;
+  margin: auto;
+  margin-top: 1.25rem;
+  border: none;
+  border-radius: 10px;
+  padding: 1.25rem;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 70% 30%;
+  grid-template-columns: 70% 30%;
+}
+.mainContPrin .mainDivPrin .mainWelcome .mainWelcomeTitle {
+  -ms-grid-column: 1;
+  grid-column: 1;
+  -ms-grid-row: 1;
+  grid-row: 1;
+  font-family: serif;
+  font-size: 50px;
+  font-weight: 600;
+  color: #2b006e;
+  margin-bottom: -30px;
+}
+.mainContPrin .mainDivPrin .mainWelcome .mainWelcomeText {
+  -ms-grid-column: 1;
+  grid-column: 1;
+  -ms-grid-row: 2;
+  grid-row: 2;
+  font-family: sans-serif;
+  font-size: 1.0625rem;
+  font-weight: 400;
+  color: #2b006e;
+}
+.mainContPrin .mainDivPrin .mainWelcome .mainWelcomeImg {
+  -ms-grid-column: 2;
+  grid-column: 2;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 2;
+  grid-row: 1/3;
+  width: 9.375rem;
+  height: 9.375rem;
+}
+.mainContPrin .mainDivPrin .mainDashboard {
+  width: 91%;
+  height: 62%;
+  padding: 1.25rem;
+  background-color: #f0f0f0;
+  margin: auto;
+  margin-top: 0.625rem;
+  border-radius: 0.625rem;
+}
+.mainContPrin .mainDivSecond {
+  width: 95%;
+  height: 100%;
+  background-color: #f7f7f7;
+}
+.mainContPrin .mainDivSecond .secondCalificatios {
+  width: 88%;
+  height: 47%;
+  background-color: #f0f0f0;
+  margin-top: 20px;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  padding: 10px;
+}
+.mainContPrin .mainDivSecond .secondNotes {
+  width: 88%;
+  height: 41%;
+  padding: 0.625rem;
+  background-color: #f0f0f0;
+  border-radius: 0.625rem;
+}
+.mainContPrin .mainDivSecond .secondNotes .notesInput {
+  width: 100%;
+  margin-bottom: 3px;
+}
+.mainContPrin .mainDivSecond .secondNotes .notesBtn {
+  width: 101.5%;
 }
 
 @media screen and (max-width: 575px) and (orientation: portrait) {

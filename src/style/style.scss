@@ -3,9 +3,13 @@
 @import "./base/mediaqueris";
 
 //utilities
+@import"./utilities/font";
+@import"./utilities/color";
 
 //components
 @import "./components/loginComponents";
+@import "./components/headerComponents";
+
 
 //theme
 
@@ -13,6 +17,7 @@
 @import "./layout/loginLayout";
 @import "./layout/header";
 @import "./layout/loginLayout";
+@import "./layout/main";
 
 //mediaqueris
 @import "./media/loginMedia";
