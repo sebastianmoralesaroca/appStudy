@@ -1,4 +1,4 @@
-function funHeader() {
+function funHeader(h,j) {
     const heraderCont = document.createElement('div');
     body.appendChild(heraderCont);
     heraderCont.id = 'heraderCont';
@@ -56,11 +56,11 @@ function funHeader() {
             headerDiv2.appendChild(headerNamePerson);
             headerNamePerson.id = 'headerNamePerson';
             headerNamePerson.className = 'headerNamePerson';
-            headerNamePerson.innerHTML ="Sebastian Morales H";
+            headerNamePerson.innerHTML = h;
 
             const headerImgPerson = document.createElement('img');
             headerDiv2.appendChild(headerImgPerson);
             headerImgPerson.id = 'headerImgPerson';
             headerImgPerson.className = 'headerImgPerson';
-            headerImgPerson.src = teacherMan;
+            headerImgPerson.src = j;
 }

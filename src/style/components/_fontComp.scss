@@ -1,0 +1,6 @@
+@mixin mixFontText{
+    font-family:$fontSans;
+    font-size:1.0625rem;
+    font-weight:400;
+    color:$colBase;
+}

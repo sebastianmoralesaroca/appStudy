@@ -1,15 +1,16 @@
 // base
 @import "./base/defect";
 @import "./base/mediaqueris";
+@import"./base/color";
+@import"./base/font";
 
 //utilities
-@import"./utilities/font";
-@import"./utilities/color";
 
 //components
-@import "./components/loginComponents";
-@import "./components/headerComponents";
-
+@import "./components/btnComp";
+@import "./components/imageComp";
+@import "./components/inputComp";
+@import "./components/fontComp";
 
 //theme
 
