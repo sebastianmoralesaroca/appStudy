@@ -5,3 +5,39 @@
     border:solid 1px black;
     border-radius:3px;
 }
+
+@mixin mixNewNotes{
+    width:100%;
+    height:auto;
+    padding:0.3125rem 0.3125rem 0.3125rem 0.3125rem;
+    background-color:$colBase;
+    margin-top:0.1875rem;
+    border:solid 1px $colOrange;
+    border-radius:0.3125rem;
+    .ckeckNotes{
+        width:15px;
+        height:15px;
+        display:inline;
+        margin-right:0.4375rem;
+    }
+    .removeNotes{
+        width:15px;
+        height:15px;
+        background:transparent;
+        border:none;
+        display:inline;
+        .imgNotes{
+            width:15px;
+            height:15px
+        }
+    }
+    .textNotes{
+        font-family:$fontSans;
+        font-size:15px;
+        font-weight:400;
+        color:$colSmoke;
+        display:block;
+        overflow:scroll;
+        text-overflow:ellipsis;
+    }
+}

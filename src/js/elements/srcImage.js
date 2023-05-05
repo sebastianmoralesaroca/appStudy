@@ -17,3 +17,5 @@ const imgstudentManWoman ='../../public/estudiantes.png';
 const teacherMan ='../../public/maestro.png';
 const imgAddUsers ='../../public/imgUsers.png';
 const imgUsers ='../../public/imgAddUsers.png'
+const imgBooks ='../../public/books.png'
+const imgRemove ='../../public/remove.png'

@@ -36,7 +36,8 @@ loginSignin.addEventListener('click', () => {
             funMain(person.firstname, textDir, imgDirectory)
             funUserAdmin(person.firstname,textDir);
         } else if (person.position === "Teacher") {
-            buttonEnter.setAttribute('href', '../page/indexTeacher.html');
+            loginContPricipal.remove();
+            funHeader(person.firstname+person.lastname, imgDirectory);
         } else if (person.position === "Parents") {
             buttonEnter.setAttribute('href', '../page/indexParents.html');
         } else if (person.position === "Student") {

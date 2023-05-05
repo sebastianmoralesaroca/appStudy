@@ -59,4 +59,37 @@ function funMain(h,j,k) {
                     secondNotes.appendChild(notesBtn);
                     notesBtn.className ='notesBtn';
                     notesBtn.innerHTML ="Add Notes";
+
+                    notesBtn.addEventListener('click',()=>{
+                        console.log("Nota Agregada");
+
+                        let newNotes = document.createElement('div');
+                            secondNotes.appendChild(newNotes);
+                            newNotes.className ='newNotes';
+
+                            let checkNotes = document.createElement('input');
+                                newNotes.appendChild(checkNotes);
+                                checkNotes.type ='checkbox';
+                                checkNotes.className ='ckeckNotes';
+
+                                let removeNotes = document.createElement('button');
+                                    newNotes.appendChild(removeNotes);
+                                    removeNotes.className ='removeNotes';
+                                    removeNotes.id = 'removeNotes';
+
+                                    let imgNotes = document.createElement('img');
+                                        removeNotes.appendChild(imgNotes);
+                                        imgNotes.className ='imgNotes';
+                                        imgNotes.src = imgRemove;
+
+                                    removeNotes.addEventListener('click',()=>{
+                                        newNotes.remove();
+                                    })
+
+                                    let textNotes = document.createElement('p');
+                                        newNotes.appendChild(textNotes);
+                                        textNotes.className ='textNotes';
+                                        textNotes.innerHTML =notesInput.value;
+
+                    })
 }
