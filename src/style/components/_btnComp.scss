@@ -45,12 +45,24 @@
     font-weight:400;
     color:$colSmoke;
     &:hover{
-        background-color:red;
+        background-color:$colOrange;
     }
     .menuImg{
         width:0.9375rem;
         height:0.9375rem;
         margin-left:0.3125rem;
         vertical-align:text-top;
+    }
+}
+
+@mixin mixExit {
+    width:20px;
+    height:20px;
+    background:transparent;
+    margin-left:30px;
+    border:none;
+    .exitImg{
+        width:20px;
+        height:20px;
     }
 }

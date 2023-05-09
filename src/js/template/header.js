@@ -63,4 +63,13 @@ function funHeader(h,j) {
             headerImgPerson.id = 'headerImgPerson';
             headerImgPerson.className = 'headerImgPerson';
             headerImgPerson.src = j;
+
+            const exitBtn = document.createElement('button');
+            headerDiv2.appendChild(exitBtn);
+            exitBtn.className ='exitBtn';
+            exitBtn.id ='exitBtn';
+                const exitImg = document.createElement('img');
+                exitBtn.appendChild(exitImg);
+                exitImg.className = 'exitImg';
+                exitImg.src = imgexit;
 }

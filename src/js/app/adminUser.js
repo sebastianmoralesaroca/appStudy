@@ -1,4 +1,4 @@
-function funUserAdmin(pf, wtx) {
+function funUserAdmin() {
     let mainMenu = document.getElementById('mainMenu');
         let menu1 = document.createElement('button');
             mainMenu.appendChild(menu1);

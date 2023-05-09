@@ -301,6 +301,17 @@
   height: 2.5rem;
   margin-left: 1.25rem;
 }
+.body .heraderCont .headerDiv2 .exitBtn {
+  width: 20px;
+  height: 20px;
+  background: transparent;
+  margin-left: 30px;
+  border: none;
+}
+.body .heraderCont .headerDiv2 .exitBtn .exitImg {
+  width: 20px;
+  height: 20px;
+}
 
 .body {
   background-color: #2b006e;
@@ -525,7 +536,7 @@
   color: #f7f7f7;
 }
 .mainContPrin .mainMenu .menuBtn:hover {
-  background-color: red;
+  background-color: #ff9a00;
 }
 .mainContPrin .mainMenu .menuBtn .menuImg {
   width: 0.9375rem;
