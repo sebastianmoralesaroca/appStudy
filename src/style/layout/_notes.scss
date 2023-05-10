@@ -1,0 +1,17 @@
+.secondNotes{
+    width: 88%;
+    height:41%;
+    padding:0.625rem;
+    background-color:$colGrey;
+    border-radius:0.625rem;
+    overflow:scroll;
+    .notesInput{
+        @include mixInputNotes;
+    }
+    .notesBtn{
+        @include mixNotesBtn;
+    }
+    .newNotes{
+        @include mixNewNotes;
+    }
+}

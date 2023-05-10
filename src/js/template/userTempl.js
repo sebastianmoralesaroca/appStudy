@@ -37,6 +37,7 @@ function funMain(h,j,k) {
             const mainDashboard = document.createElement('div');
             mainDivPrin.appendChild(mainDashboard);
             mainDashboard.className ='mainDashboard';
+            mainDashboard.id ='mainDashboard';
 
         const mainDivSecond = document.createElement('div');
         mainContPrin.appendChild(mainDivSecond);

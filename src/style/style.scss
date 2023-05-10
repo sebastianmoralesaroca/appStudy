@@ -15,10 +15,18 @@
 //theme
 
 // layout
-@import "./layout/loginLayout";
 @import "./layout/header";
-@import "./layout/loginLayout";
-@import "./layout/main";
+@import "./layout/welcome";
+@import "./layout/menu";
+@import "./layout/dashboard";
+@import "./layout/calification";
+@import "./layout/notes";
 
-//mediaqueris
-@import "./media/loginMedia";
+// pages
+@import"./pages/login";
+@import"./pages/main";
+
+// media queris
+@import"./mobile/querisLogin";
+@import"./mobile/querisMain";
+@import"./mobile/querisMenu";

@@ -1,0 +1,124 @@
+// Media Tablet
+@media screen and (min-width: $media-small) and (max-width: $media-medium) and (orientation:portrait) {
+.body{
+    .heraderCont {
+        padding-left:5px;
+        .headerDiv1 {
+            margin-left:5px;
+        }
+        .headerDiv2{
+            margin-right:10px;
+            .headerNamePerson {
+                font-size:17px;
+                margin-left:0px;
+                margin-right:0px;
+            }
+            .headerImgPerson {
+                margin-left:0px;
+            }
+            .exitBtn{
+                width: 10px;
+                height: 10px;
+
+            }
+        }
+    }
+}
+
+    .mainContPrin{
+        height: 40.625rem;
+        display:grid;
+        grid-template-columns: 22% 78%;
+        .mainDivSecond{
+            display:none;
+        }
+    }
+    .mainWelcome{
+        .mainWelcomeTitle{
+            font-size:2.5rem;
+        }
+        .mainWelcomeText{
+            font-size:0.9375rem;
+        }
+    }
+    .secondCalificatios{
+        display:none;
+    }
+    .secondNotes{
+        display:none;
+    }
+}
+
+// Media Mobile Default
+@media screen and (max-width: $media-small) and (orientation:portrait) {
+    .body{
+        .heraderCont {
+            padding-left:5px;
+            .headerDiv1 {
+                margin-left:5px;
+                .menuBurger{
+                    display:inline;
+                    @include mixBurguer;
+                }
+                .headerLogo1{
+                    display:none;
+                }
+            }
+            .headerDiv2{
+                margin-right:10px;
+                .headerNamePerson {
+                    font-size:17px;
+                    margin-left:0px;
+                    margin-right:0px;
+                }
+                .headerImgPerson {
+                    margin-left:0px;
+                }
+                .exitBtn{
+                    width: 10px;
+                    height: 10px;
+                    margin-left:15px;
+                }
+            }
+        }
+    }
+        .mainContPrin{
+            height: 40.625rem;
+            display:grid;
+            grid-template-columns: 2% 96% 2%;
+            .mainMenu{
+                display:none;
+            }
+            .mainDivPrin{
+                grid-column:2;
+                border-radius:10px;
+            }
+            .mainDivSecond{
+                display:none;
+            }
+        }
+        .mainWelcome{
+            width:88%;
+            height:6.25rem;
+            .mainWelcomeTitle{
+                font-size:1.625rem;
+                margin-bottom:1px;
+            }
+            .mainWelcomeText{
+                font-size:0.75rem;
+            }
+            .mainWelcomeImg{
+                width:6.25rem;
+                height:6.25rem;
+            }
+        }
+        .secondCalificatios{
+            display:none;
+        }
+        .secondNotes{
+            display:none;
+        }
+        .mainDashboard{
+            width:88%;
+        }
+}

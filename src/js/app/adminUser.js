@@ -18,4 +18,9 @@ function funUserAdmin() {
                 menu2.appendChild(img2);
                 img2.className ='menuImg';
                 img2.src = imgAddUsers;
+    menu1.addEventListener('click', ()=>{
+        let text1 = document.createElement('p');
+        mainDashboard.appendChild(text1);
+        text1.innerHTML =users;
+        })
 }

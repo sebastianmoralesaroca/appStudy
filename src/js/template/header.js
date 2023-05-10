@@ -9,6 +9,25 @@ function funHeader(h,j) {
         headerDiv1.id ='headerDiv1';
         headerDiv1.className ='headerDiv1';
 
+            const menuBurger = document .createElement('button');
+            headerDiv1.appendChild(menuBurger);
+            menuBurger.className='menuBurger';
+            menuBurger.id='menuBurger';
+                const menuBurgerImg = document.createElement('img');
+                menuBurger.appendChild(menuBurgerImg);
+                menuBurgerImg.className='menuBurgerImg';
+                menuBurgerImg.src = imgMenuBurger;
+            let openMenu = 0;
+            menuBurger.addEventListener('click', ()=>{
+                openMenu = openMenu + 1;
+                if (openMenu === 1) {
+                    mainMenu.style ='display:inherit; z-index:1; grid-column:2;';
+                } else {
+                    openMenu = 0;
+                    mainMenu.style ='display:none';
+                }
+            });
+
             const headerLogo1 = document.createElement('img');
             headerDiv1.appendChild(headerLogo1);
             headerLogo1.id = 'adminLogo1';

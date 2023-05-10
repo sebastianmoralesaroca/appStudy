@@ -1,0 +1,23 @@
+
+// Media Mobile Default
+@media screen and (max-width: $media-small) and (orientation:portrait) {
+    .loginContPricipal {
+        margin-top:20px;
+        .loginTitle {
+            font-size:30px;
+        }
+        .loginText1 {
+            font-size:18px;
+        }
+        .loginContSecond {
+            width:90%;
+        }
+        .loginForm {
+            width:80%;
+        }
+    }
+}
+
+
+
+

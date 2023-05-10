@@ -21,6 +21,7 @@ const imgcoment ='../../public/coment.png';
 const imgnotiComent ='../../public/comentario-alt.png'
 const imglightbulb ='../../public/bombilla.png';
 const imgnotifications ='../../public/campana.png';
+const imgMenuBurger ='../../public/menu-hamburguesa.png';
 
 // notes person
 const imgdelete ='../../public/delete.png';

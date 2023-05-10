@@ -66,3 +66,15 @@
         height:20px;
     }
 }
+
+@mixin mixBurguer{
+    width:30px;
+    height:30px;
+    background:transparent;
+    border:none;
+    margin-right:10px;
+    .menuBurgerImg{
+        width:30px;
+        height:30px;
+    }
+}

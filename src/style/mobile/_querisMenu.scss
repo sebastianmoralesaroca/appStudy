@@ -1,0 +1,12 @@
+// Media Tablet
+@media screen and (min-width: $media-small) and (max-width: $media-medium) and (orientation:portrait) {
+    .mainMenu{
+        display:grid;
+        grid-template-rows:repeat(8, 40px);
+        height:90%;
+        margin-top:3.125rem;
+        .menuBtn{
+            @include mixBtnMenu;
+        }
+    }
+}

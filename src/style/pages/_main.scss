@@ -1,0 +1,16 @@
+.mainContPrin{
+    height: 40.625rem;
+    display:grid;
+    grid-template-columns: 15% 65% 20%;
+    .mainDivPrin{
+        background-color:$colSmoke;
+        height:100%;
+        border-radius:10px 0px 0px 10px;
+    }
+    .mainDivSecond{
+        width:95%;
+        height:100%;
+        background-color:$colSmoke;
+        border-radius:0px 10px 10px 0px;
+   }
+}
