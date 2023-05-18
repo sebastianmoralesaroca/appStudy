@@ -1,5 +1,3 @@
-const exitHandler = require("npm/lib/utils/exit-handler");
-
     function funUserAdmin() {
         let mainMenu = document.getElementById('mainMenu');
             let menu1 = document.createElement('button');
@@ -20,56 +18,75 @@ const exitHandler = require("npm/lib/utils/exit-handler");
                     menu2.appendChild(img2);
                     img2.className ='menuImg';
                     img2.src = imgAddUsers;
-        const contLoginNewUser = document.createElement('div');
-        const contLookUsers = document.createElement('div');
-        let x = true;
-        let z = true;
+                    let listUsers = document.createElement('p');
+                    const contLoginNewUser = document.createElement('div');
+                    let inputFirstName = document.createElement('input');
+                    let inputLastName = document.createElement('input');
+                    let inputPositions = document.createElement('input');
+                    let inputSexo = document.createElement('input');
+                    let inputId = document.createElement('input');
+                    let btnPushUser = document.createElement('button');
         menu1.addEventListener('click',()=>{
-            if (x === true) {
-                mainDashboard.appendChild(contLookUsers);
-                contLookUsers.className='contLookUsers';
-                contLookUsers.id='contLookUsers';
-            let textLookUsers = document.createElement('p');
-                contLookUsers.appendChild(textLookUsers);
-                textLookUsers.innerHTML = users;
-            contLoginNewUser.remove();
-            x = false;
-            }
+                mainDashboard.appendChild(listUsers);
+                listUsers.innerHTML=users;
+                contLoginNewUser.remove();
             })
         menu2.addEventListener('click',()=>{
                 mainDashboard.appendChild(contLoginNewUser);
                 contLoginNewUser.className='contLoginNewUser';
-            let inputFirstName = document.createElement('input');
                 contLoginNewUser.appendChild(inputFirstName);
                 inputFirstName.type='text';
                 inputFirstName.placeholder="  First Name";
                 inputFirstName.className='inputFirstName';
-            let inputLastName = document.createElement('input');
                     contLoginNewUser.appendChild(inputLastName);
                     inputLastName.type='text';
                     inputLastName.placeholder="  Last Name";
                     inputLastName.className='inputLastName';
-                let inputPositions = document.createElement('input');
                     contLoginNewUser.appendChild(inputPositions);
                     inputPositions.type='text';
                     inputPositions.placeholder="  Position";
                     inputPositions.className='inputPositions';
-                    let inputSexo = document.createElement('input');
                     contLoginNewUser.appendChild(inputSexo);
                     inputSexo.type='text';
                     inputSexo.placeholder="  Sexo";
                     inputSexo.className='inputSexo';
-                let inputId = document.createElement('input');
                     contLoginNewUser.appendChild(inputId);
                     inputId.type='password';
                     inputId.placeholder="  ID";
                     inputId.className='inputId';
-                    let btnPushUser = document.createElement('button');
                     contLoginNewUser.appendChild(btnPushUser);
                     btnPushUser.type='submit';
                     btnPushUser.className='btnPushUser';
                     btnPushUser.innerHTML='Create User';
-                contLookUsers.remove();
-                x = true;
+                    listUsers.remove();
             })
-            }
+
+            
+            let inPush = document.createElement('input');
+            mainMenu.appendChild(inPush);
+            
+            let empujar = document.createElement('btn');
+            mainMenu.appendChild(empujar);
+            
+            let btn3 = document.createElement('button');
+        mainMenu.appendChild(btn3);
+        btn3.innerHTML='BOTON 3';
+        let list = ["seba"];
+        let text = document.createElement('p');
+        function act() {
+            text.innerHTML=list.join(' ');
+        }
+        btn3.addEventListener('click',()=>{
+            mainDashboard.appendChild(text);
+            let x = inPush.value;
+            list.push(x);
+            act();
+            console.log(x);
+        })
+        
+    
+    
+    
+    
+    
+    }

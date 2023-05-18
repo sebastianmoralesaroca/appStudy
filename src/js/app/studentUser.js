@@ -63,4 +63,12 @@ function funUserStudent() {
         menu7.appendChild(img7);
         img7.className ='menuImg';
         img7.src = imgmoney;
+
+    newFunction();
+
+    function newFunction() {
+        menu1.addEventListener('click', () => {
+            console.log("hola");
+        });
+    }
 }
