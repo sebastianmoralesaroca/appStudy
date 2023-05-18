@@ -1,9 +1,10 @@
 .mainDashboard{
     width: 91%;
-    height: 62%;
+    height:420px;
     padding:1.25rem;
     background-color:$colGrey;
     margin: auto;
     margin-top:0.625rem;
     border-radius:0.625rem;
+    overflow:scroll;
 }

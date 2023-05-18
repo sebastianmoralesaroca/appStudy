@@ -26,12 +26,20 @@
   width: 98%;
   padding-left: 1.25rem;
   height: 4.375rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 .body .heraderCont .headerDiv1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   margin-left: 3.125rem;
   height: 100%;
 }
@@ -59,8 +67,12 @@
   display: inline;
 }
 .body .heraderCont .headerDiv2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   margin-right: 3.125rem;
 }
 .body .heraderCont .headerDiv2 .headerBtnMessage {
@@ -118,11 +130,15 @@
   border: none;
   border-radius: 10px;
   padding: 1.25rem;
+  display: -ms-grid;
   display: grid;
+  -ms-grid-columns: 70% 30%;
   grid-template-columns: 70% 30%;
 }
 .mainWelcome .mainWelcomeTitle {
+  -ms-grid-column: 1;
   grid-column: 1;
+  -ms-grid-row: 1;
   grid-row: 1;
   font-family: serif;
   font-size: 2.9375rem;
@@ -131,7 +147,9 @@
   margin-bottom: 0px;
 }
 .mainWelcome .mainWelcomeText {
+  -ms-grid-column: 1;
   grid-column: 1;
+  -ms-grid-row: 2;
   grid-row: 2;
   font-family: sans-serif;
   font-size: 1.0625rem;
@@ -139,14 +157,19 @@
   color: #2b006e;
 }
 .mainWelcome .mainWelcomeImg {
+  -ms-grid-column: 2;
   grid-column: 2;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 2;
   grid-row: 1/3;
   width: 9.375rem;
   height: 9.375rem;
 }
 
 .mainMenu {
+  display: -ms-grid;
   display: grid;
+  -ms-grid-rows: (40px)[8];
   grid-template-rows: repeat(8, 40px);
   height: 90%;
   margin-top: 3.125rem;
@@ -175,12 +198,13 @@
 
 .mainDashboard {
   width: 91%;
-  height: 62%;
+  height: 420px;
   padding: 1.25rem;
   background-color: #f0f0f0;
   margin: auto;
   margin-top: 0.625rem;
   border-radius: 0.625rem;
+  overflow: scroll;
 }
 
 .secondCalificatios {
@@ -195,7 +219,7 @@
 
 .secondNotes {
   width: 88%;
-  height: 41%;
+  height: 285px;
   padding: 0.625rem;
   background-color: #f0f0f0;
   border-radius: 0.625rem;
@@ -276,12 +300,41 @@
   width: 600px;
   margin: auto;
   margin-top: 20px;
+  display: -ms-grid;
   display: grid;
+  -ms-grid-columns: (1fr)[3];
   grid-template-columns: repeat(3, 1fr);
+  -ms-grid-rows: (1fr)[2];
   grid-template-rows: repeat(2, 1fr);
 }
+.body .loginContPricipal .loginContSecond > *:nth-child(1) {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+}
+.body .loginContPricipal .loginContSecond > *:nth-child(2) {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+}
+.body .loginContPricipal .loginContSecond > *:nth-child(3) {
+  -ms-grid-row: 1;
+  -ms-grid-column: 3;
+}
+.body .loginContPricipal .loginContSecond > *:nth-child(4) {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+}
+.body .loginContPricipal .loginContSecond > *:nth-child(5) {
+  -ms-grid-row: 2;
+  -ms-grid-column: 2;
+}
+.body .loginContPricipal .loginContSecond > *:nth-child(6) {
+  -ms-grid-row: 2;
+  -ms-grid-column: 3;
+}
 .body .loginContPricipal .loginContSecond .loginImgParents {
+  -ms-grid-column: 1;
   grid-column: 1;
+  -ms-grid-row: 1;
   grid-row: 1;
   margin: auto;
   width: 80px;
@@ -291,7 +344,9 @@
   background-color: orange;
 }
 .body .loginContPricipal .loginContSecond .loginSpanParents {
+  -ms-grid-column: 1;
   grid-column: 1;
+  -ms-grid-row: 2;
   grid-row: 2;
   font-family: sans-serif;
   font-size: 17px;
@@ -300,7 +355,9 @@
   margin-top: 10px;
 }
 .body .loginContPricipal .loginContSecond .loginImgStudent {
+  -ms-grid-column: 2;
   grid-column: 2;
+  -ms-grid-row: 1;
   grid-row: 1;
   margin: auto;
   width: 80px;
@@ -310,7 +367,9 @@
   background-color: orange;
 }
 .body .loginContPricipal .loginContSecond .loginSpanStudent {
+  -ms-grid-column: 2;
   grid-column: 2;
+  -ms-grid-row: 2;
   grid-row: 2;
   font-family: sans-serif;
   font-size: 17px;
@@ -319,7 +378,9 @@
   margin-top: 10px;
 }
 .body .loginContPricipal .loginContSecond .loginImgTeacher {
+  -ms-grid-column: 3;
   grid-column: 3;
+  -ms-grid-row: 1;
   grid-row: 1;
   margin: auto;
   width: 80px;
@@ -329,7 +390,9 @@
   background-color: orange;
 }
 .body .loginContPricipal .loginContSecond .loginSpanTeacher {
+  -ms-grid-column: 3;
   grid-column: 3;
+  -ms-grid-row: 2;
   grid-row: 2;
   font-family: sans-serif;
   font-size: 17px;
@@ -342,10 +405,13 @@
   height: 450px;
   margin: auto;
   margin-top: -30px;
+  display: -ms-grid;
   display: grid;
+  -ms-grid-rows: (1fr)[3];
   grid-template-rows: repeat(3, 1fr);
 }
 .body .loginContPricipal .loginForm .loginUsername {
+  -ms-grid-row: 1;
   grid-row: 1;
   background: transparent;
   border: solid 2px grey;
@@ -360,6 +426,7 @@
   height: 40px;
 }
 .body .loginContPricipal .loginForm .loginSignin {
+  -ms-grid-row: 2;
   grid-row: 2;
   background-color: orange;
   border: none;
@@ -372,6 +439,7 @@
   height: 70px;
 }
 .body .loginContPricipal .loginForm .loginText2 {
+  -ms-grid-row: 3;
   grid-row: 3;
   font-family: sans-serif;
   font-size: 15px;
@@ -386,6 +454,7 @@
   color: orange;
 }
 .body .loginContPricipal .buttonEnter {
+  -ms-grid-row: 3;
   grid-row: 3;
   font-family: sans-serif;
   font-size: 1.25rem;
@@ -403,7 +472,9 @@
 
 .mainContPrin {
   height: 40.625rem;
+  display: -ms-grid;
   display: grid;
+  -ms-grid-columns: 15% 65% 20%;
   grid-template-columns: 15% 65% 20%;
 }
 .mainContPrin .mainDivPrin {
@@ -416,6 +487,86 @@
   height: 100%;
   background-color: #f7f7f7;
   border-radius: 0px 10px 10px 0px;
+}
+
+.contLoginNewUser {
+  background-color: #2b006e;
+  border-radius: 15px;
+  margin: auto;
+  width: 50%;
+  padding: 20px;
+  margin-bottom: 5px;
+}
+.contLoginNewUser .inputFirstName {
+  width: 100%;
+  height: 40px;
+  border: none;
+  border-radius: 10px;
+  display: block;
+  padding: 7px 0px 7px 0px;
+  margin-bottom: 5px;
+  font-family: sans-serif;
+  font-size: 13px;
+  font-weight: 400;
+}
+.contLoginNewUser .inputLastName {
+  width: 100%;
+  height: 40px;
+  border: none;
+  border-radius: 10px;
+  display: block;
+  padding: 7px 0px 7px 0px;
+  margin-bottom: 5px;
+  font-family: sans-serif;
+  font-size: 13px;
+  font-weight: 400;
+}
+.contLoginNewUser .inputPositions {
+  width: 100%;
+  height: 40px;
+  border: none;
+  border-radius: 10px;
+  display: block;
+  padding: 7px 0px 7px 0px;
+  margin-bottom: 5px;
+  font-family: sans-serif;
+  font-size: 13px;
+  font-weight: 400;
+}
+.contLoginNewUser .inputSexo {
+  width: 100%;
+  height: 40px;
+  border: none;
+  border-radius: 10px;
+  display: block;
+  padding: 7px 0px 7px 0px;
+  margin-bottom: 5px;
+  font-family: sans-serif;
+  font-size: 13px;
+  font-weight: 400;
+}
+.contLoginNewUser .inputId {
+  width: 100%;
+  height: 40px;
+  border: none;
+  border-radius: 10px;
+  display: block;
+  padding: 7px 0px 7px 0px;
+  margin-bottom: 5px;
+  font-family: sans-serif;
+  font-size: 13px;
+  font-weight: 400;
+}
+.contLoginNewUser .btnPushUser {
+  font-family: sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+  color: #f7f7f7;
+  background-color: #ff9a00;
+  border: none;
+  border-radius: 10px;
+  width: 100%;
+  padding: 7px 0px 7px 0px;
 }
 
 @media screen and (max-width: 575px) and (orientation: portrait) {
@@ -459,7 +610,9 @@
   }
   .mainContPrin {
     height: 40.625rem;
+    display: -ms-grid;
     display: grid;
+    -ms-grid-columns: 22% 78%;
     grid-template-columns: 22% 78%;
   }
   .mainContPrin .mainDivSecond {
@@ -518,13 +671,16 @@
   }
   .mainContPrin {
     height: 40.625rem;
+    display: -ms-grid;
     display: grid;
+    -ms-grid-columns: 2% 96% 2%;
     grid-template-columns: 2% 96% 2%;
   }
   .mainContPrin .mainMenu {
     display: none;
   }
   .mainContPrin .mainDivPrin {
+    -ms-grid-column: 2;
     grid-column: 2;
     border-radius: 10px;
   }
@@ -558,7 +714,9 @@
 }
 @media screen and (min-width: 575px) and (max-width: 990px) and (orientation: portrait) {
   .mainMenu {
+    display: -ms-grid;
     display: grid;
+    -ms-grid-rows: (40px)[8];
     grid-template-rows: repeat(8, 40px);
     height: 90%;
     margin-top: 3.125rem;
@@ -584,4 +742,4 @@
     margin-left: 0.3125rem;
     vertical-align: text-top;
   }
-}/*# sourceMappingURL=style.css.map */
+}

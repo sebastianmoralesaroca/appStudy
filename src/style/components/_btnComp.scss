@@ -78,3 +78,15 @@
         height:30px;
     }
 }
+
+@mixin mixBtnPushUser{
+    font-family:$fontSans;
+    font-size:20px;
+    font-weight:bold;
+    color:$colSmoke;
+    background-color:$colOrange;
+    border:none;
+    border-radius:10px;
+    width:100%;
+    padding:7px 0px 7px 0px;
+}

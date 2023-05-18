@@ -41,3 +41,16 @@
         text-overflow:ellipsis;
     }
 }
+
+@mixin mixInpNewUser{
+    width:100%;
+    height:40px;
+    border:none;
+    border-radius:10px;
+    display:block;
+    padding:7px 0px 7px 0px;
+    margin-bottom:5px;
+    font-family:$fontSans;
+    font-size:13px;
+    font-weight:400;
+}

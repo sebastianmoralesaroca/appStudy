@@ -21,10 +21,10 @@
 @import "./layout/dashboard";
 @import "./layout/calification";
 @import "./layout/notes";
+@import "./layout/login";
+@import "./layout/main";
+@import "./layout/loginNewUser";
 
-// pages
-@import"./pages/login";
-@import"./pages/main";
 
 // media queris
 @import"./mobile/querisLogin";
