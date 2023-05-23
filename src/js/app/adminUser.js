@@ -19,12 +19,12 @@ function funUserAdmin() {
                 img2.className ='menuImg';
                 img2.src = imgAddUsers;
     const contListUsers = document.createElement('div');
-    users.forEach(user => {
-        let listUsers = document.createTextNode(`Nombre:${user.firstname}`);
-        menu1.addEventListener('click',()=>{
-            mainDashboard.appendChild(contListUsers);
-            contListUsers.appendChild(listUsers);
-            contLoginNewUser.remove();
+        users.forEach(user => {
+            let listUsers = document.createTextNode(`Nombre:${user.firstname}`);
+            menu1.addEventListener('click',()=>{
+                mainDashboard.appendChild(contListUsers);
+                contListUsers.appendChild(listUsers);
+                contLoginNewUser.remove();
         });
     })
 
