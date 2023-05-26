@@ -123,7 +123,7 @@
 
 .mainWelcome {
   width: 91%;
-  height: 8.75rem;
+  height: auto;
   background-color: #ff9a00;
   margin: auto;
   margin-top: 1.25rem;
@@ -165,6 +165,23 @@
   width: 9.375rem;
   height: 9.375rem;
 }
+.mainWelcome .btnAddWelcome {
+  background-color: #2b006e;
+  border: none;
+  border-radius: 10px;
+  font-family: sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  height: auto;
+  width: 55%;
+  padding: 6px;
+  color: #f7f7f7;
+  text-align: start;
+}
+.mainWelcome .btnAddWelcome:hover {
+  background: transparent;
+  border: solid 2.5px #2b006e;
+}
 
 .mainMenu {
   display: -ms-grid;
@@ -198,13 +215,18 @@
 
 .mainDashboard {
   width: 91%;
-  height: 420px;
+  height: 21.25rem;
   padding: 1.25rem;
   background-color: #f0f0f0;
   margin: auto;
   margin-top: 0.625rem;
   border-radius: 0.625rem;
   overflow: scroll;
+}
+.mainDashboard .contDataDashboard {
+  width: 100px;
+  height: 100px;
+  background-color: red;
 }
 
 .secondCalificatios {
@@ -219,7 +241,7 @@
 
 .secondNotes {
   width: 88%;
-  height: 285px;
+  height: 16.25rem;
   padding: 0.625rem;
   background-color: #f0f0f0;
   border-radius: 0.625rem;
@@ -481,6 +503,16 @@
   background-color: #f7f7f7;
   height: 100%;
   border-radius: 10px 0px 0px 10px;
+}
+.mainContPrin .mainDivPrin .contAddData {
+  position: relative;
+  width: 98%;
+  height: 98%;
+  background-color: blue;
+  z-index: 5;
+  margin-top: -624px;
+  margin-left: 6px;
+  border-radius: 15px;
 }
 .mainContPrin .mainDivSecond {
   width: 95%;

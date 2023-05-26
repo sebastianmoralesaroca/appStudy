@@ -44,12 +44,10 @@ loginSignin.addEventListener('click', () => {
             loginContPricipal.remove();
             funHeader(person.firstname+" "+person.lastname, imgstudent);
             funMain(person.firstname, textDir, imgstudent);
-            funUserTeacher();
         }else if(person.position === "Students" || person.sexo === "Masculino"){
             loginContPricipal.remove();
             funHeader(person.firstname+" "+person.lastname, imgstudent);
             funMain(person.firstname, textDir, imgstudent);
-            funUserTeacher();
         }else {
             console.log("No es ningun perfil.")
         }

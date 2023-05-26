@@ -16,6 +16,7 @@ function funMain(h,j,k) {
             const mainWelcome = document.createElement('div');
                 mainDivPrin.appendChild(mainWelcome);
                 mainWelcome.className ='mainWelcome';
+                mainWelcome.id ='mainWelcome';
 
                 let mainWelcomeTitle = document.createElement('h2');
                     mainWelcome.appendChild(mainWelcomeTitle);

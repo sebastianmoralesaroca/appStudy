@@ -1,16 +1,29 @@
 .mainContPrin{
-    height: 40.625rem;
-    display:grid;
-    grid-template-columns: 15% 65% 20%;
+    height: 40.625rem ;
+    display: grid ;
+    grid-template-columns: 15% 65% 20% ;
+
     .mainDivPrin{
-        background-color:$colSmoke;
-        height:100%;
-        border-radius:10px 0px 0px 10px;
+        background-color: $colSmoke ;
+        height: 100% ;
+        border-radius: 10px 0px 0px 10px ;
+
+        .contAddData {
+            position: relative;
+            width: 98%;
+            height: 98%;
+            background-color: blue;
+            z-index: 5;
+            margin-top: -624px;
+            margin-left: 6px;
+            border-radius: 15px;
+          }
     }
-    .mainDivSecond{
-        width:95%;
-        height:100%;
-        background-color:$colSmoke;
-        border-radius:0px 10px 10px 0px;
+
+    .mainDivSecond {
+        width: 95% ;
+        height: 100% ;
+        background-color: $colSmoke ;
+        border-radius: 0px 10px 10px 0px ;
    }
 }
