@@ -108,3 +108,47 @@
         border: solid 2.5px $colBase ;
     }
 }
+
+@mixin btnRemoveAdd {
+    background: transparent ;
+    width: 50px ;
+    height: 50px ;
+    border: solid 3px $colBase ;
+    border-radius: 50% ;
+    margin-top: -20px ;
+    &:hover {
+        border: solid 3px $colSmoke ;
+    }
+}
+
+@mixin btnAddData {
+    font-family: $fontSans ;
+    font-size: 20px ;
+    font-weight: 400 ;
+    color: $colSmoke ;
+    border: none ;
+    border-radius: 10px ;
+    background-color: $colBase ;
+    padding: 5px 0px 5px 0px ;
+
+    .imgAdd {
+        width: 25px ;
+        height: 25px ;
+        margin-left: 15px ;
+    }
+    &:hover {
+        background-color: transparent ;
+        border: solid 2px $colSmoke ;
+    }
+}
+
+@mixin btnPushData {
+    background-color: $colBase ;
+    border: none ;
+    border-radius: 10px ;
+    font-family: $fontSans ;
+    font-size: 20px ;
+    font-weight: 600 ;
+    color: $colSmoke ;
+    height: 60px ;
+}

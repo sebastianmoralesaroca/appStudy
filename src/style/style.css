@@ -504,16 +504,6 @@
   height: 100%;
   border-radius: 10px 0px 0px 10px;
 }
-.mainContPrin .mainDivPrin .contAddData {
-  position: relative;
-  width: 98%;
-  height: 98%;
-  background-color: blue;
-  z-index: 5;
-  margin-top: -624px;
-  margin-left: 6px;
-  border-radius: 15px;
-}
 .mainContPrin .mainDivSecond {
   width: 95%;
   height: 100%;
@@ -599,6 +589,114 @@
   border-radius: 10px;
   width: 100%;
   padding: 7px 0px 7px 0px;
+}
+
+.contAddData {
+  position: relative;
+  width: 98%;
+  height: 98%;
+  background-color: #ff9a00;
+  z-index: 5;
+  margin-top: -624px;
+  margin-left: 6px;
+  border-radius: 15px;
+}
+.contAddData .headerData {
+  text-align: center;
+  padding-top: 30px;
+  margin-bottom: 40px;
+}
+.contAddData .headerData .titleData {
+  font-family: sans-serif;
+  font-size: 40px;
+  font-weight: bold;
+  color: #2b006e;
+  display: inline;
+  margin: 18%;
+}
+.contAddData .headerData .removeElection {
+  background: transparent;
+  width: 50px;
+  height: 50px;
+  border: solid 3px #2b006e;
+  border-radius: 50%;
+  margin-top: -20px;
+}
+.contAddData .headerData .removeElection:hover {
+  border: solid 3px #f7f7f7;
+}
+.contAddData .headerData .removeElection .imgRemoveElection {
+  width: 20px;
+  height: 20px;
+}
+.contAddData .contElectionData {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 1fr 5px 1fr 5px 1fr 5px 1fr 5px 1fr 5px 1fr 5px 1fr;
+  grid-template-rows: repeat(7, 1fr);
+  width: 50%;
+  height: 350px;
+  margin: auto;
+  grid-gap: 5px;
+}
+.contAddData .contElectionData .btnAdd {
+  font-family: sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  color: #f7f7f7;
+  border: none;
+  border-radius: 10px;
+  background-color: #2b006e;
+  padding: 5px 0px 5px 0px;
+}
+.contAddData .contElectionData .btnAdd .imgAdd {
+  width: 25px;
+  height: 25px;
+  margin-left: 15px;
+}
+.contAddData .contElectionData .btnAdd:hover {
+  background-color: transparent;
+  border: solid 2px #f7f7f7;
+}
+.contAddData .contFormPush {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 1fr 5px 1fr 5px 1fr 5px 1fr 5px 1fr;
+  grid-template-rows: repeat(5, 1fr);
+  width: 50%;
+  height: 300px;
+  margin: auto;
+  grid-gap: 5px;
+}
+.contAddData .contFormPush .inputForm {
+  background: transparent;
+  border: solid 3px #f7f7f7;
+  border-radius: 10px;
+  padding-left: 5px;
+  font-family: sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  height: 50px;
+}
+.contAddData .contFormPush .inpReviw {
+  background: transparent;
+  border: solid 3px #f7f7f7;
+  border-radius: 10px;
+  height: 150px;
+  font-family: sans-serif;
+  font-size: 13px;
+  font-weight: 400;
+  padding: 5px 5px 5px 5px;
+}
+.contAddData .contFormPush .btnPush {
+  background-color: #2b006e;
+  border: none;
+  border-radius: 10px;
+  font-family: sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+  color: #f7f7f7;
+  height: 60px;
 }
 
 @media screen and (max-width: 575px) and (orientation: portrait) {

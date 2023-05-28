@@ -17,7 +17,7 @@ function funUserTeacher() {
         const img2 = document.createElement('img');
             menuExamn.appendChild(img2);
             img2.className = 'menuImg' ;
-            img2.src = imgtask ;
+            img2.src = imgExamn ;
     const menuHomeWork = document.createElement('button');
         mainMenu.appendChild(menuHomeWork);
         menuHomeWork.className = 'menuBtn';
@@ -44,7 +44,7 @@ function funUserTeacher() {
         const img5 = document.createElement('img') ;
             menuMeeting.appendChild(img5) ;
             img5.className = 'menuImg' ;
-            img5.src = imgUsers ;
+            img5.src = imgMeeting ;
     const menuActivity = document.createElement('button') ;
         mainMenu.appendChild(menuActivity) ;
         menuActivity.className = 'menuBtn' ;
@@ -120,6 +120,7 @@ function funUserTeacher() {
                 headerData.className = 'headerData' ;
                 contAddData.appendChild(headerData) ;
                 const titleData = document.createElement('h3') ;
+                    titleData.id = 'titleData' ;
                     titleData.className = 'titleData' ;
                     titleData.innerHTML = "who do Add ?" ;
                     headerData.appendChild(titleData) ;
@@ -127,9 +128,12 @@ function funUserTeacher() {
                     removeElection.className = 'removeElection' ;
                     headerData.appendChild(removeElection) ;
                     const imgRemoveElection = document.createElement('img') ;
-                        imgRemoveElection.className = imgRemoveElection ;
-                        imgRemoveElection.src = imgcalifications ;
+                        imgRemoveElection.className = 'imgRemoveElection' ;
+                        imgRemoveElection.src = imgCruz ;
                         removeElection.appendChild(imgRemoveElection) ;
         funElectionData();
+        removeElection.addEventListener('click',()=>{
+            contAddData.remove() ;
+        })
     })
 }

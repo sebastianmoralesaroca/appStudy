@@ -17,3 +17,14 @@ users.push(user1);
 users.push(user2);
 users.push(user3);
 users.push(user4);
+
+let arrayCalFernanda = [] ;
+let arrayCalJuan = [] ;
+let arrayExa = [] ;
+let arrayHW = [] ;
+let arrayNotFernanda = [] ;
+let arrayNotJuan = [] ;
+let arrayMeet = [] ;
+let arrayAct = [] ;
+let arrayMonFernanda = [] ;
+let arrayMonJuan = [] ;
