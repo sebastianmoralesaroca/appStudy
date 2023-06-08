@@ -53,7 +53,7 @@ function funUserTeacher() {
         const img6 = document.createElement('img') ;
             menuActivity.appendChild(img6) ;
             img6.className = 'menuImg' ;
-            img6.src = imgdashboard ;
+             img6.src = imgMeeting ;
     const menuMoney = document.createElement('button') ;
         mainMenu.appendChild(menuMoney) ;
         menuMoney.className = 'menuBtn' ;
@@ -81,14 +81,18 @@ function funUserTeacher() {
     const divActivity = document.createElement('div') ;
         divActivity.className = 'contDataDashboard' ;
     const divMoney = document.createElement('div') ;
-        divMoney.className = 'contDataDashboard' ;
+    divMoney.className = 'contDataDashboard' ;
 
+    let calificationsStudents = document.createElement('p') ;
+        calificationsStudents.className = 'calificationsStudents' ;
     menuCalifications.addEventListener( 'click', () =>{
-        mainDashboard.appendChild(divCalifications) ;
     });
 
+    let calJuan = document.createElement('h1') ;
     menuExamn.addEventListener( 'click', () =>{
+        calJuan.innerHTML = arrayCalJuan
         mainDashboard.appendChild(divExamn) ;
+        divExamn.appendChild(calJuan) ;
     });
 
     menuHomeWork.addEventListener('click',()=>{

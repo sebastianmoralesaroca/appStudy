@@ -18,8 +18,8 @@ users.push(user2);
 users.push(user3);
 users.push(user4);
 
-let arrayCalFernanda = [] ;
-let arrayCalJuan = [] ;
+let arrayCalFernanda = ['soy fernanda'] ;
+let arrayCalJuan = ['soy juan'] ;
 let arrayExa = [] ;
 let arrayHW = [] ;
 let arrayNotFernanda = [] ;
