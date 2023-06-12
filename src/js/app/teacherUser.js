@@ -53,7 +53,7 @@ function funUserTeacher() {
         const img6 = document.createElement('img') ;
             menuActivity.appendChild(img6) ;
             img6.className = 'menuImg' ;
-             img6.src = imgMeeting ;
+            img6.src = imgActivity ;
     const menuMoney = document.createElement('button') ;
         mainMenu.appendChild(menuMoney) ;
         menuMoney.className = 'menuBtn' ;
@@ -68,51 +68,106 @@ function funUserTeacher() {
         btnAddWelcome.innerHTML = "Choose One Option" ;
         btnAddWelcome.className = 'btnAddWelcome' ;
 
-    const divCalifications = document.createElement('div') ;
-        divCalifications.className = 'contDataDashboard' ;
-    const divExamn = document.createElement('div') ;
-        divExamn.className = 'contDataDashboard' ;
-    const divHomeWork = document.createElement('div') ;
-        divHomeWork.className = 'contDataDashboard' ;
-    const divNotes = document.createElement('div') ;
-        divNotes.className = 'contDataDashboard' ;
-    const divMeeting = document.createElement('div') ;
-        divMeeting.className = 'contDataDashboard' ;
-    const divActivity = document.createElement('div') ;
-        divActivity.className = 'contDataDashboard' ;
-    const divMoney = document.createElement('div') ;
-    divMoney.className = 'contDataDashboard' ;
+        function funRemoveDivs (aa, ab, ac, ad, ae, af) {
+            aa.remove() ;
+            ab.remove() ;
+            ac.remove() ;
+            ad.remove() ;
+            ae.remove() ;
+            af.remove() ;
+        };
 
-    let calificationsStudents = document.createElement('p') ;
-        calificationsStudents.className = 'calificationsStudents' ;
+    let TitleJuan = document.createElement('h4') ;
+    let TitleFernanda = document.createElement('h4') ;
+    let dataJuan = document.createElement('p') ;
+    let dataFernanda = document.createElement('p') ;
+
+        const divCalifications = document.createElement('div') ;
     menuCalifications.addEventListener( 'click', () =>{
+        funRemoveDivs( divExamn, divHW, divNotes, divMeeting, divActivity, divMoney ) ;
+        mainDashboard.appendChild( divCalifications ) ;
+        TitleJuan.innerHTML = "This Califications is from Juan Palma S." ;
+        divCalifications.appendChild( TitleJuan ) ;
+        dataJuan.innerHTML = arrayCalJuan ;
+        divCalifications.appendChild( dataJuan ) ;
+        TitleFernanda.innerHTML = "This Califications is from Fernanda Molina F." ;
+        divCalifications.appendChild( TitleFernanda ) ;
+        dataFernanda.innerHTML = arrayCalFernanda ;
+        divCalifications.appendChild( dataFernanda ) ;
     });
 
-    let calJuan = document.createElement('h1') ;
-    menuExamn.addEventListener( 'click', () =>{
-        calJuan.innerHTML = arrayCalJuan
-        mainDashboard.appendChild(divExamn) ;
-        divExamn.appendChild(calJuan) ;
+    const divExamn = document.createElement('div') ;
+    arrayExa.forEach(Examn => {
+        const contExamn = document.createElement('div');
+        let listExamn = document.createTextNode(`Nombre:${Examn.edad}`);
+        menuExamn.addEventListener('click', () => {
+            funRemoveDivs( divCalifications, divHW, divNotes, divMeeting, divActivity, divMoney ) ;
+            mainDashboard.appendChild( divExamn ) ;
+            divExamn.appendChild( contExamn ) ;
+            contExamn.appendChild( listExamn ) ;
+        });
     });
 
-    menuHomeWork.addEventListener('click',()=>{
-        mainDashboard.appendChild(divHomeWork) ;
-    })
+    const divHW = document.createElement('div') ;
+    arrayHW.forEach(HW => {
+        const contHW = document.createElement('div');
+        let listHW = document.createTextNode(`Nombre:${HW.edad}`);
+        menuHomeWork.addEventListener('click', () => {
+            funRemoveDivs( divCalifications, divExamn, divNotes, divMeeting, divActivity, divMoney ) ;
+            mainDashboard.appendChild( divHW );
+            divHW.appendChild( contHW ) ;
+            contHW.appendChild( listHW ) ;
+        });
+    });
 
+    const divNotes = document.createElement('div') ;
     menuNotes.addEventListener('click',()=>{
-        mainDashboard.appendChild(divNotes) ;
+        funRemoveDivs( divCalifications, divExamn, divHW, divMeeting, divActivity, divMoney ) ;
+        mainDashboard.appendChild( divNotes ) ;
+        TitleFernanda.innerHTML = "This is Notes is from Fernanda Molina F." ;
+        divNotes.appendChild( TitleFernanda ) ;
+        dataFernanda.innerHTML = arrayNotFernanda ;
+        divNotes.appendChild( dataFernanda ) ;
+        TitleJuan.innerHTML = "This Notes is from Juan Palma S." ;
+        divNotes.appendChild( TitleJuan ) ;
+        dataJuan.innerHTML = arrayNotJuan ;
+        divNotes.appendChild( dataJuan ) ;
     })
 
-    menuMeeting.addEventListener('click',()=>{
-        mainDashboard.appendChild(divMeeting) ;
+    const divMeeting = document.createElement('div') ;
+    arrayMeet.forEach(Meet => {
+        const contMeeting = document.createElement('div') ;
+        let listMeeting = document.createTextNode(`Nombre:${Meet.edad}`) ;
+        menuMeeting.addEventListener('click', () => {
+            funRemoveDivs( divCalifications, divExamn, divHW, divNotes, divActivity, divMoney ) ;
+            mainDashboard.appendChild( divMeeting );
+            divMeeting.appendChild( contMeeting ) ;
+            contMeeting.appendChild( listMeeting ) ;
+        });
+    });
+
+    const divActivity = document.createElement('div') ;
+    arrayAct.forEach(act => {
+        const contActivity = document.createElement('div') ;
+        let listActivity = document.createTextNode(`Nombre:${act.edad}`) ;
+        menuActivity.addEventListener('click',()=>{
+            funRemoveDivs( divCalifications, divExamn, divHW, divNotes, divMeeting, divMoney ) ;
+            mainDashboard.appendChild( divMoney ) ;
+            divMoney.appendChild( contActivity ) ;
+            contActivity.appendChild( listActivity ) ;
+        })
     })
 
-    menuActivity.addEventListener('click',()=>{
-        mainDashboard.appendChild(divActivity) ;
-    })
-
-    menuMoney.addEventListener('click',()=>{
-        mainDashboard.appendChild(divMoney) ;
+    const divMoney = document.createElement('div') ;
+    arrayMon.forEach(mon => {
+        const contMoney = document.createElement('div') ;
+        let listMoney = document.createTextNode(`Nombre:${mon.edad}`) ;
+        menuMoney.addEventListener('click',()=>{
+            funRemoveDivs( divCalifications, divExamn, divHW, divNotes, divMeeting, divActivity ) ;
+            mainDashboard.appendChild( divMoney ) ;
+            divMoney.appendChild( contMoney ) ;
+            contMoney.appendChild( listMoney ) ;
+        })
     })
 
     btnAddWelcome.addEventListener('click',()=>{

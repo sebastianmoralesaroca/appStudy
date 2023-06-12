@@ -223,12 +223,6 @@
   border-radius: 0.625rem;
   overflow: scroll;
 }
-.mainDashboard .contDataDashboard {
-  width: 100px;
-  height: 100px;
-  background-color: red;
-}
-
 .secondCalificatios {
   width: 88%;
   height: 47%;

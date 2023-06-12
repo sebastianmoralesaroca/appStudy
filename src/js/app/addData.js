@@ -51,7 +51,7 @@ function funElectionData() {
         contElectionData.appendChild(btnAddAct) ;
         const imgAddAct = document.createElement('img') ;
             imgAddAct.className = 'imgAdd' ;
-            imgAddAct.src = imgDashboard ;
+            imgAddAct.src = imgActivity ;
             btnAddAct.appendChild(imgAddAct) ;
     const btnAddMon = document.createElement('button') ;
         btnAddMon.className = 'btnAdd' ;
@@ -109,6 +109,9 @@ function funElectionData() {
                 btnExaPush.className = 'btnPush' ;
                 btnExaPush.innerHTML = "Push Examn" ;
                 contFormExa.appendChild(btnExaPush) ;
+            btnExaPush.addEventListener('click', () =>{
+            
+            })
     })
 
     btnAddHW.addEventListener('click', ()=>{
