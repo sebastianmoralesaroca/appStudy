@@ -44,6 +44,8 @@
     font-size:1.0625rem;
     font-weight:400;
     color:$colSmoke;
+    text-align: start ;
+
     &:hover{
         background-color:$colOrange;
     }
@@ -52,6 +54,7 @@
         height:0.9375rem;
         margin-left:0.3125rem;
         vertical-align:text-top;
+        margin-right: 0.625rem ;
     }
 }
 
@@ -107,6 +110,12 @@
         background: transparent ;
         border: solid 2.5px $colBase ;
     }
+    .imgBtnWeolcome {
+        width: 20px ;
+        height: 20px ;
+        vertical-align: sub ;
+        margin: 0px 5px 0px 5px ;
+    }
 }
 
 @mixin btnRemoveAdd {
@@ -130,11 +139,13 @@
     border-radius: 10px ;
     background-color: $colBase ;
     padding: 5px 0px 5px 0px ;
+    text-align: start ;
 
     .imgAdd {
         width: 25px ;
         height: 25px ;
-        margin-left: 15px ;
+        margin-right: 15px ;
+        margin-left: 20% ;
     }
     &:hover {
         background-color: transparent ;

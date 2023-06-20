@@ -23,15 +23,15 @@ let arrayCalFernanda = [4.7, 6.6] ;
 let arrayCalJuan = [6.4, 5.7] ;
 
 let arrayExa = [
-    { nombre: 'Juan', edad: 20 },
-    { nombre: 'María', edad: 20 },
-    { nombre: 'Pedro', edad: 20 }
+    { nombre: 'Juan', edad: 21 },
+    { nombre: 'María', edad: 22 },
+    { nombre: 'Pedro', edad: 33 }
 ] ;
 
 let arrayHW = [
-    { nombre: 'Juan', edad:  30},
-    { nombre: 'María', edad: 30 },
-    { nombre: 'Pedro', edad: 30 }
+    { nombre: 'Juan', edad:  31},
+    { nombre: 'María', edad: 32 },
+    { nombre: 'Pedro', edad: 33 }
 ] ;
 
 let arrayNotFernanda = ["esta es una alimna que se destaca en todas als clases"] ;
@@ -39,19 +39,19 @@ let arrayNotFernanda = ["esta es una alimna que se destaca en todas als clases"]
 let arrayNotJuan = ["falta poner un poco mas de atencion en clases para poder alcanzar mejores resulados academicos "] ;
 
 let arrayMeet = [
-    { nombre: 'Juan', edad: 40 },
-    { nombre: 'María', edad: 40 },
-    { nombre: 'Pedro', edad: 40 }
+    { nombre: 'Juan', edad: 41 },
+    { nombre: 'María', edad: 42 },
+    { nombre: 'Pedro', edad: 43 }
 ] ;
 
 let arrayAct = [
-    { nombre: 'Juan', edad: 50 },
-    { nombre: 'María', edad: 50 },
-    { nombre: 'Pedro', edad: 50 }
+    { nombre: 'Juan', edad: 51 },
+    { nombre: 'María', edad: 52 },
+    { nombre: 'Pedro', edad: 53 }
 ] ;
 
 let arrayMon = [
-    { nombre: 'Juan', edad: 60 },
-    { nombre: 'María', edad: 60 },
-    { nombre: 'Pedro', edad: 60 }
+    { nombre: 'Juan', edad: 61 },
+    { nombre: 'María', edad: 62 },
+    { nombre: 'Pedro', edad: 63 }
 ] ;
