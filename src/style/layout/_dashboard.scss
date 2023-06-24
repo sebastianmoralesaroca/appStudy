@@ -8,5 +8,11 @@
     border-radius: 0.625rem ;
     overflow: scroll ;
 
-    .contDataDashboard {}
+    .titleData {
+        font-family: $fontSans ;
+        font-sie: 22px ;
+        color: black ;
+    }
+
+    .textData {}
 }
