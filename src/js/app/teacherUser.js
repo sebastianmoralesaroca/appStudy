@@ -90,26 +90,33 @@ function funUserTeacher() {
             const textBtnWelcome = document.createTextNode("Choose One Option")
                 btnAddWelcome.appendChild( textBtnWelcome ) ;
 
-    let titleJuanCal = document.createElement('h4') ;
-        titleJuanCal.className = 'titleData' ;
-    let titleFernandaCal = document.createElement('h4') ;
-        titleFernandaCal.className = 'titleData' ;
-    let dataJuanCal = document.createElement('p') ;
-        dataJuanCal.className = 'textData' ;
-    let dataFernandaCal = document.createElement('p') ;
-        dataFernandaCal.className = 'textData' ;
-    menuCalifications.addEventListener( 'click', () =>{
-        const divCalifications = document.createElement('div') ;
-            divCalifications.id = 'divCalifications' ;
-            mainDashboard.appendChild( divCalifications ) ;
-            titleJuanCal.innerHTML = "This Califications is from Juan Palma S." ;
-            divCalifications.appendChild( titleJuanCal ) ;
-            dataJuanCal.innerHTML = arrayCalJuan ;
-            divCalifications.appendChild( dataJuanCal ) ;
-            titleFernandaCal.innerHTML = "This Califications is from Fernanda Molina F." ;
-            divCalifications.appendChild( titleFernandaCal ) ;
-            dataFernandaCal.innerHTML = arrayCalFernanda ;
-            divCalifications.appendChild( dataFernandaCal ) ;
+    menuCalifications.addEventListener('click', () => {
+        const divCal = document.createElement('div') ;
+            divCal.id = 'divCal' ;
+        const titleCalFer = document.createElement('h4') ;
+            titleCalFer.innerHTML = "Califications " + user3.firstname ;
+            titleCalFer.className = 'titleData' ;
+            divCal.appendChild( titleCalFer ) ;
+        arrayCalFernanda.forEach(calFer => {
+            const contCalFer = document.createElement('div') ;
+            let listCalFer = document.createTextNode(`SUBJECT ${calFer.subject} ${calFer.calification}`) ;
+                listCalFer.className = 'textData' ;
+                mainDashboard.appendChild(divCal) ;
+                divCal.appendChild(contCalFer) ;
+                contCalFer.appendChild(listCalFer) ;
+        });
+        const titleCalJuan = document.createElement('h4') ;
+            titleCalJuan.innerHTML = "Califications " + user4.firstname ;
+            titleCalJuan.className = 'titleData' ;
+            divCal.appendChild(titleCalJuan) ;
+        arrayCalJuan.forEach(calJuan => {
+            const contCalJuan = document.createElement('div') ;
+            let listCalJuan = document.createTextNode(`SUBJECT ${calJuan.subject} ${calJuan.calification}`) ;
+                listCalJuan.className = 'textData' ;
+                mainDashboard.appendChild(divCal) ;
+                divCal.appendChild(contCalJuan) ;
+                contCalJuan.appendChild(listCalJuan) ;
+        });
     });
 
     menuExamn.addEventListener('click', () => {
@@ -121,7 +128,7 @@ function funUserTeacher() {
             divExamn.appendChild( titleExamn ) ;
         arrayExa.forEach( exa => {
             const contExamn = document.createElement('div') ;
-            let listExamn = document.createTextNode(`Nombre:${exa.edad}`) ;
+            let listExamn = document.createTextNode(`SUBJECT: ${exa.subject} | DATA: ${exa.date} | TEXT: ${exa.text}`) ;
                 listExamn.className = 'textData' ;
             mainDashboard.appendChild( divExamn ) ;
             divExamn.appendChild( contExamn ) ;
@@ -138,7 +145,7 @@ function funUserTeacher() {
             divHW.appendChild( titleHW ) ;
         arrayHW.forEach(HW => {
             const contHW = document.createElement('div');
-            let listHW = document.createTextNode(`Nombre:${HW.edad}`);
+            let listHW = document.createTextNode(`SUBJECT: ${HW.subject} | DATA: ${HW.date} | TEXT: ${HW.text}`) ;
                 listHW.className = 'textData' ;
                 mainDashboard.appendChild( divHW );
                 divHW.appendChild( contHW ) ;
@@ -146,27 +153,34 @@ function funUserTeacher() {
         });
     });
 
-    let titleJuanNot = document.createElement('h4') ;
-        titleJuanNot.className = 'titleData' ;
-    let titleFernandaNot = document.createElement('h4') ;
-        titleFernandaNot.className = 'titleData' ;
-    let dataJuanNot = document.createElement('p') ;
-        dataJuanNot.className = 'textData' ;
-    let dataFernandaNot = document.createElement('p') ;
-    dataFernandaNot.className = 'textData' ;
-    menuNotes.addEventListener('click',()=>{
-        const divNotes = document.createElement('div') ;
-            divNotes.id = 'divNotes' ;
-        mainDashboard.appendChild( divNotes ) ;
-        titleFernandaNot.innerHTML = "This is Notes is from Fernanda Molina F." ;
-        divNotes.appendChild( titleFernandaNot ) ;
-        dataFernandaNot.innerHTML = arrayNotFernanda ;
-        divNotes.appendChild( dataFernandaNot ) ;
-        titleJuanNot.innerHTML = "This Notes is from Juan Palma S." ;
-        divNotes.appendChild( titleJuanNot ) ;
-        dataJuanNot.innerHTML = arrayNotJuan ;
-        divNotes.appendChild( dataJuanNot ) ;
-    })
+    menuNotes.addEventListener('click', () => {
+        const divNot = document.createElement('div') ;
+            divNot.id = 'divHW' ;
+        const titleNotFer = document.createElement('h4') ;
+            titleNotFer.innerHTML = "Notes " + user3.firstname ;
+            titleNotFer.className = 'titleData' ;
+            divNot.appendChild( titleNotFer ) ;
+        arrayNotFernanda.forEach(notFer => {
+            const contNotFer = document.createElement('div') ;
+            let listNotFer = document.createTextNode(`${notFer.text}`) ;
+                listNotFer.className = 'textData' ;
+                mainDashboard.appendChild(divNot) ;
+                divNot.appendChild(contNotFer) ;
+                contNotFer.appendChild(listNotFer) ;
+        });
+        const titleNotJuan = document.createElement('h4') ;
+            titleNotJuan.innerHTML = "Notes " + user4.firstname ;
+            titleNotJuan.className = 'titleData' ;
+            divNot.appendChild(titleNotJuan) ;
+        arrayNotJuan.forEach(notJuan => {
+            const contNotJuan = document.createElement('div') ;
+            let listNotJuan = document.createTextNode(`${notJuan.text}`) ;
+                listNotJuan.className = 'textData' ;
+                mainDashboard.appendChild(divNot) ;
+                divNot.appendChild(contNotJuan) ;
+                contNotJuan.appendChild(listNotJuan) ;
+        });
+    });
 
     menuMeeting.addEventListener('click', () => {
         const divMeeting = document.createElement('div') ;
@@ -174,14 +188,14 @@ function funUserTeacher() {
         const titleMeet = document.createElement('h4') ;
             titleMeet.innerHTML = "Meetings" ;
             titleMeet.className = 'titleData' ;
-            divMeeting.appendChild( titleMeet ) ;
+            divMeeting.appendChild(titleMeet) ;
         arrayMeet.forEach(Meet => {
             const contMeeting = document.createElement('div') ;
-            let listMeeting = document.createTextNode(`Nombre:${Meet.edad}`) ;
+            let listMeeting = document.createTextNode(`TITLE: ${Meet.title} | DATE: ${Meet.date} | TEXT: ${Meet.text}`) ;
                 listMeeting.className = 'textData' ;
-                mainDashboard.appendChild( divMeeting );
-                divMeeting.appendChild( contMeeting ) ;
-                contMeeting.appendChild( listMeeting ) ;
+                mainDashboard.appendChild(divMeeting);
+                divMeeting.appendChild(contMeeting) ;
+                contMeeting.appendChild(listMeeting) ;
         });
     });
 
@@ -194,7 +208,7 @@ function funUserTeacher() {
             divActivity.appendChild( titleAct ) ;
         arrayAct.forEach(act => {
             const contActivity = document.createElement('div') ;
-            let listActivity = document.createTextNode(`Nombre:${act.edad}`) ;
+            let listActivity = document.createTextNode(`ACTIVITY: ${act.title} | DATE: ${act.date} | TEXT ${act.text}`) ;
                 listActivity.className = 'textData' ;
                 mainDashboard.appendChild( divActivity ) ;
                 divActivity.appendChild( contActivity ) ;
@@ -211,7 +225,7 @@ function funUserTeacher() {
             divMoney.appendChild( titleMon ) ;
         arrayMon.forEach(mon => {
             const contMoney = document.createElement('div') ;
-            let listMoney = document.createTextNode(`Nombre:${mon.edad}`) ;
+            let listMoney = document.createTextNode(`REASON ${mon.title} |  DEBT $${mon.debt} | TEXT ${mon.text}`) ;
                 listMoney.className = 'textData' ;
                 mainDashboard.appendChild( divMoney ) ;
                 divMoney.appendChild( contMoney ) ;

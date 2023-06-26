@@ -79,19 +79,35 @@ function funElectionData() {
                 inpCalNameStudent.className = 'inputForm' ;
                 inpCalNameStudent.placeholder = "Name Student" ;
                 contFormCal.appendChild(inpCalNameStudent) ;
+            const inpCalSubect = document.createElement('input') ;
+                inpCalSubect.className = 'inputForm' ;
+                inpCalSubect.placeholder = "Subject" ;
+                contFormCal.appendChild(inpCalSubect) ;
             const inpCalification = document.createElement('input') ;
                 inpCalification.className = 'inputForm' ;
                 inpCalification.placeholder = "Calification Student" ;
                 inpCalification.type = 'number' ;
                 contFormCal.appendChild(inpCalification) ;
-            const inpCalReviw = document.createElement('textarea') ;
-                inpCalReviw.className = 'inpReviw' ;
-                inpCalReviw.placeholder = "Add Student Reviw" ;
-                contFormCal.appendChild(inpCalReviw) ;
             const btnCalPush = document.createElement('button') ;
                 btnCalPush.className = 'btnPush' ;
                 btnCalPush.innerHTML = "Push Calification" ;
                 contFormCal.appendChild(btnCalPush) ;
+        btnCalPush.addEventListener('click', () => {
+            if ( inpCalNameStudent.value === user4.firstname ) {
+                let newCal = {subject: inpCalSubect.value, calification: inpCalification.value} ;
+                arrayCalJuan.push(newCal) ;
+                console.log("Added Calification Juan Palma S.") ;
+                alert("Added Calification Juan Palma S.") ;
+            } else if ( inpCalNameStudent.value === user3.firstname ) {
+                let newCal = {subject: inpCalSubect.value, calification: inpCalification.value} ;
+                arrayCalFernanda.push(newCal) ;
+                console.log("Added Calification Fernanda Molina F.") ;
+                alert("Added Calification Fernanda Molina F.") ;
+            } else {
+                console.log("Error Name Student") ;
+                alert("Error Name Student") ;
+            }
+        })
     })
 
     btnAddExa.addEventListener('click', ()=>{
@@ -116,9 +132,12 @@ function funElectionData() {
                 btnExaPush.className = 'btnPush' ;
                 btnExaPush.innerHTML = "Push Examn" ;
                 contFormExa.appendChild(btnExaPush) ;
-            btnExaPush.addEventListener('click', () =>{
-            
-            })
+        btnExaPush.addEventListener('click', () =>{
+            let newExamn = {subject: inpExaSubject.value, date: inpExaDate.value, text: inpExaReviw.value} ;
+            arrayExa.push(newExamn) ;
+            console.log("Added New Examn") ;
+            alert("Added New Examn") ;
+        })
     })
 
     btnAddHW.addEventListener('click', ()=>{
@@ -144,6 +163,12 @@ function funElectionData() {
                 btnHWPush.className = 'btnPush' ;
                 btnHWPush.innerHTML = "Push HomeWork" ;
                 contFormHW.appendChild(btnHWPush) ;
+        btnHWPush.addEventListener('click', () => {
+            let newHW = {subject: inpHWSubject.value, date: inpHWData.value, text: inpHWReviw.value} ;
+            arrayHW.push(newHW) ;
+            console.log("Added New HomeWork");
+            alert("Added New HomeWork")
+        })
     })
 
     btnAddNotes.addEventListener( 'click', ()=>{
@@ -157,15 +182,6 @@ function funElectionData() {
                 inpNotNameSudent.placeholder = "Name Student" ;
                 inpNotNameSudent.type = 'text' ;
                 contFormNot.appendChild(inpNotNameSudent) ;
-            const inpNotDate = document.createElement('input') ;
-                inpNotDate.className = 'inputForm' ;
-                inpNotDate.type = 'date' ;
-                contFormNot.appendChild(inpNotDate) ;
-            const inpNotAffair = document.createElement('input') ;
-                inpNotAffair.className = 'inputForm' ;
-                inpNotAffair.type = 'text' ;
-                inpNotAffair.placeholder = "Add Affair" ;
-                contFormNot.appendChild(inpNotAffair) ;
             const inpNotReviw = document.createElement('textarea') ;
                 inpNotReviw.className = 'inpReviw' ;
                 inpNotReviw.placeholder = "Add Your Reviw For The Student" ;
@@ -174,6 +190,22 @@ function funElectionData() {
                 btnNotPush.className = 'btnPush' ;
                 btnNotPush.innerHTML = "Push Note" ;
                 contFormNot.appendChild(btnNotPush) ;
+        btnNotPush.addEventListener('click', () => {
+            if ( inpNotNameSudent.value === user4.firstname ) {
+                let newNotJuan = {text: inpNotReviw.value}
+                arrayNotJuan.push(newNotJuan) ;
+                console.log("Added Note Juan Palma S.") ;
+                alert("Added Note Juan Palma S.") ;
+            } else if ( inpNotNameSudent.value === user3.firstname ) {
+                let newNotFer = {text: inpNotReviw.value} ;
+                arrayNotFernanda.push(newNotFer) ;
+                console.log("Added Note Fernanda Molina F.") ;
+                alert("Added Note Fernanda Molina F.") ;
+            } else {
+                console.log("Error Name Student") ;
+                alert("Error Name Student") ;
+            }
+        })
     })
 
     btnAddMeet.addEventListener('click',()=>{
@@ -199,6 +231,12 @@ function funElectionData() {
             btnMeetPush.className = 'btnPush' ;
             btnMeetPush.innerHTML = "Push Meeting" ;
             contFormMeet.appendChild(btnMeetPush) ;
+        btnMeetPush.addEventListener('click', () => {
+            let newMeet = {title: inpMeetTitle.value, date: inpMeetDate.value, text: inpMeetReviw.value} ;
+            arrayMeet.push(newMeet) ;
+            console.log("Added New Meeting") ;
+            alert("Added New Meeting") ;
+        })
     })
 
     btnAddAct.addEventListener('click',()=>{
@@ -224,6 +262,12 @@ function funElectionData() {
                 btnActPush.className = 'btnPush' ;
                 btnActPush.innerHTML = "Push Activity" ;
                 contFormAct.appendChild(btnActPush) ;
+        btnActPush.addEventListener('click', () => {
+            let newAct = {title: inpActTitle.value, date: inpActDate.value, text: inpActReviw.value} ;
+            arrayAct.push(newAct) ;
+            console.log("Added Activity") ;
+            alert("Added activity") ;
+        })
     })
 
     btnAddMon.addEventListener('click',()=>{
@@ -232,14 +276,14 @@ function funElectionData() {
         const contFormMon = document.createElement('div') ;
             contFormMon.className = 'contFormPush' ;
             contAddData.appendChild(contFormMon) ;
-            const inpMonNameStudent = document.createElement('input') ;
-                inpMonNameStudent.className = 'inputForm' ;
-                inpMonNameStudent.type = 'text' ;
-                inpMonNameStudent.placeholder = "Name Student" ;
-                contFormMon.appendChild(inpMonNameStudent) ;
+            const inpMonReason = document.createElement('input') ;
+                inpMonReason.className = 'inputForm' ;
+                inpMonReason.type = 'text' ;
+                inpMonReason.placeholder = "Name Debt" ;
+                contFormMon.appendChild(inpMonReason) ;
             const inpMonMoney = document.createElement('input') ;
                 inpMonMoney.className = 'inputForm' ;
-                inpMonMoney.placeholder = "Add Debt Student" ;
+                inpMonMoney.placeholder = "Add Debt" ;
                 inpMonMoney.type = 'number' ;
                 contFormMon.appendChild(inpMonMoney) ;
             const inpMonReviw = document.createElement('textarea') ;
@@ -251,5 +295,12 @@ function funElectionData() {
                 btnMonPuch.className = 'btnPush';
                 btnMonPuch.innerHTML = "Push Debt" ;
                 contFormMon.appendChild(btnMonPuch);
+        btnMonPuch.addEventListener('click', () => {
+            let newMon = {title: inpMonReason.value, debt: inpMonMoney.value, text: inpMonReviw.value} ;
+            arrayMon.push(newMon) ;
+            console.log("Added Money") ;
+            alert("Added Money") ;
+        })
+            
     })
 }

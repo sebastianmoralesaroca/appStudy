@@ -8,50 +8,64 @@ function userName(firstname, lastname, position, sexo, id) {
 
 let users = [];
 
-const user1 = new userName("Sebastian", "Morales H.", "Directory", "Masculino", "dir");
-const user2 = new userName("Sarah", "Santander G.", "Teacher", "Femenino", "tea");
-const user3 = new userName("Fernanda", "Molina F.", "Student", "Femenino", "sf");
-const user4 = new userName("Juan", "Palma S.", "Student", "Masculino", "sm");
+const user1 = new userName("Sebastian", "Morales H.", "Directory", "Masculino", "dir") ;
+const user2 = new userName("Sarah", "Santander G.", "Teacher", "Femenino", "tea") ;
+const user3 = new userName("Fernanda", "Molina F.", "Student", "Femenino", "sf") ;
+const user4 = new userName("Juan", "Palma S.", "Student", "Masculino", "sm") ;
 
-users.push(user1);
-users.push(user2);
-users.push(user3);
-users.push(user4);
+users.push(user1) ;
+users.push(user2) ;
+users.push(user3) ;
+users.push(user4) ;
 
-let arrayCalFernanda = [4.7, 6.6] ;
+let arrayCalFernanda = [
+    {subject: "Math", calification: 4.4},
+    {subject: "Math", calification: 4.4},
+    {subject: "Math", calification: 4.4}
+] ;
 
-let arrayCalJuan = [6.4, 5.7] ;
+let arrayCalJuan = [
+    {subject: "Math", calification: 4.4},
+    {subject: "Math", calification: 4.4},
+    {subject: "Math", calification: 4.4}
+] ;
 
 let arrayExa = [
-    { nombre: 'Juan', edad: 21 },
-    { nombre: 'María', edad: 22 },
-    { nombre: 'Pedro', edad: 33 }
+    {subject: "Math", date: 08-06-2023, text: "La prueba se tratara de potncias matematicas" },
+    {subject: "History", date: 22-08-2023, text: "la prueba se tratara de la 1ra y 2da guerra muendal"},
+    {subject: "Language", date: 21-07-2023, text: "la prueba se tratara de comprencion lectora"}
 ] ;
 
 let arrayHW = [
-    { nombre: 'Juan', edad:  31},
-    { nombre: 'María', edad: 32 },
-    { nombre: 'Pedro', edad: 33 }
+    {subject: "Math", date: 08-06-2023, text: "Este trabajo se trata de Matematicas" },
+    {subject: "History", date: 22-08-2023, text: "Este trabajo de trata de Histoia" },
+    {subject: "Language", date: 21-07-2023, text: "Este trabajo se trata de Lenguaje" }
 ] ;
 
-let arrayNotFernanda = ["esta es una alimna que se destaca en todas als clases"] ;
+let arrayNotFernanda = [
+    {text: "esta es una alimna que se destaca en todas als clases"},
+    {text: "esta es una alimna que se destaca en todas als clases"}
+] ;
 
-let arrayNotJuan = ["falta poner un poco mas de atencion en clases para poder alcanzar mejores resulados academicos "] ;
+let arrayNotJuan = [
+    {text: "falta poner un poco mas de atencion en clases para poder alcanzar mejores resulados academicos "},
+    {text: "falta poner un poco mas de atencion en clases para poder alcanzar mejores resulados academicos "}
+] ;
 
 let arrayMeet = [
-    { nombre: 'Juan', edad: 41 },
-    { nombre: 'María', edad: 42 },
-    { nombre: 'Pedro', edad: 43 }
+    {title: 'Met Marzo', date: 09-09-2023, text: "reunion correspondiente Mes"},
+    {title: 'Met Abril', date: 09-09-2023, text: "reunion correspondiente Mes"},
+    {title: 'Met Junio', date: 09-09-2023, text: "reunion correspondiente Mes"}
 ] ;
 
 let arrayAct = [
-    { nombre: 'Juan', edad: 51 },
-    { nombre: 'María', edad: 52 },
-    { nombre: 'Pedro', edad: 53 }
+    {title: 'Hallowen', date: 05-09, text: "Actividad del dia de Hallowen"},
+    {title: 'Hallowen', date: 05-09, text: "Actividad del dia de Hallowen"},
+    {title: 'Hallowen', date: 05-09, text: "Actividad del dia de Hallowen"}
 ] ;
 
 let arrayMon = [
-    { nombre: 'Juan', edad: 61 },
-    { nombre: 'María', edad: 62 },
-    { nombre: 'Pedro', edad: 63 }
+    { title: 'Deuda', debt: 4000, text: "Deuda dia del Padre" },
+    { title: 'Deuda', debt: 4000, text: "Deuda dia del Padre" },
+    { title: 'Deuda', debt: 4000, text: "Deuda dia del Padre"  }
 ] ;
