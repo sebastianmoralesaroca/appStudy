@@ -8,11 +8,19 @@
     border-radius: 0.625rem ;
     overflow: scroll ;
 
-    .titleData {
-        font-family: $fontSans ;
-        font-sie: 22px ;
-        color: black ;
-    }
+    .divData {
+        background-color: $colOrange ;
+        padding: 10px ;
+        border-radius: 7px ;
+        border: none ;
+        margin-top: 5px ;
 
-    .textData {}
+        .titleData {
+            font-family: $fontSans ;
+            font-sie: 22px ;
+            color: black ;
+        }
+
+        .textData {}
+    }
 }

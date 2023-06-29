@@ -69,3 +69,7 @@ let arrayMon = [
     { title: 'Deuda', debt: 4000, text: "Deuda dia del Padre" },
     { title: 'Deuda', debt: 4000, text: "Deuda dia del Padre"  }
 ] ;
+
+let arrayAplicationAdd = [
+    {firstname: "Diego", lastname: "Campos",  position: "Student",  sexo: "Masculino"},
+]

@@ -5,6 +5,7 @@ function funElectionData() {
     const contElectionData = document.createElement('div') ;
         contElectionData.className = 'contElectionData' ;
         contAddData.appendChild(contElectionData) ;
+
         const btnAddCal = document.createElement('button') ;
             btnAddCal.className = 'btnAdd' ;
             contElectionData.appendChild(btnAddCal) ;
@@ -14,6 +15,7 @@ function funElectionData() {
                 btnAddCal.appendChild(imgAddCal) ;
                 const textMenuCalification = document.createTextNode("Add Califications") ;
                     btnAddCal.appendChild( textMenuCalification ) ;
+
         const btnAddExa = document.createElement('button'); ;
             btnAddExa.className = 'btnAdd' ;
             contElectionData.appendChild(btnAddExa) ;
@@ -23,6 +25,7 @@ function funElectionData() {
                 btnAddExa.appendChild(imgAddExa) ;
                 const textMenuExamn = document.createTextNode("Add Examn") ;
                     btnAddExa.appendChild( textMenuExamn ) ;
+
         const btnAddHW = document.createElement('button') ;
             btnAddHW.className = 'btnAdd' ;
             contElectionData.appendChild(btnAddHW) ;
@@ -32,6 +35,7 @@ function funElectionData() {
                 btnAddHW.appendChild(imgAddHW) ;
                 const textMenuHomeWork = document.createTextNode("Add HomeWork") ;
                     btnAddHW.appendChild( textMenuHomeWork ) ;
+
         const btnAddNotes = document.createElement('button') ;
             btnAddNotes.className = 'btnAdd' ;
             contElectionData.appendChild(btnAddNotes) ;
@@ -41,6 +45,7 @@ function funElectionData() {
                 btnAddNotes.appendChild(imgAddNotes) ;
                 const textMenuNotes = document.createTextNode("Add Notes") ;
                     btnAddNotes.appendChild( textMenuNotes ) ;
+
         const btnAddMeet = document.createElement('button') ;
             btnAddMeet.className = 'btnAdd' ;
             contElectionData.appendChild(btnAddMeet) ;
@@ -50,6 +55,7 @@ function funElectionData() {
                 btnAddMeet.appendChild(imgAddMeet) ;
                 const textMenuMeeting = document.createTextNode("Add Meeting") ;
                     btnAddMeet.appendChild( textMenuMeeting ) ;
+
         const btnAddAct = document.createElement('button') ;
             btnAddAct.className = 'btnAdd' ;
             contElectionData.appendChild(btnAddAct) ;
@@ -57,8 +63,9 @@ function funElectionData() {
                 imgAddAct.className = 'imgAdd' ;
                 imgAddAct.src = imgActivity ;
                 btnAddAct.appendChild(imgAddAct) ;
-                const textMenuActivity = document.createTextNode("Add Note") ;
+                const textMenuActivity = document.createTextNode("Add Activity") ;
                     btnAddAct.appendChild( textMenuActivity ) ;
+
         const btnAddMon = document.createElement('button') ;
             btnAddMon.className = 'btnAdd' ;
             contElectionData.appendChild(btnAddMon) ;
@@ -73,37 +80,43 @@ function funElectionData() {
         contElectionData.remove();
         titleData.innerHTML = "Califications" ;
         const contFormCal = document.createElement('div') ;
-            contFormCal.className = 'contFormPush' ;
-            contAddData.appendChild(contFormCal) ;
+        contFormCal.className = 'contFormPush' ;
+        contAddData.appendChild(contFormCal) ;
             const inpCalNameStudent = document.createElement('input') ;
-                inpCalNameStudent.className = 'inputForm' ;
-                inpCalNameStudent.placeholder = "Name Student" ;
-                contFormCal.appendChild(inpCalNameStudent) ;
+            inpCalNameStudent.className = 'inputForm' ;
+            inpCalNameStudent.placeholder = "Name Student" ;
+            contFormCal.appendChild(inpCalNameStudent) ;
+
             const inpCalSubect = document.createElement('input') ;
-                inpCalSubect.className = 'inputForm' ;
-                inpCalSubect.placeholder = "Subject" ;
-                contFormCal.appendChild(inpCalSubect) ;
+            inpCalSubect.className = 'inputForm' ;
+            inpCalSubect.placeholder = "Subject" ;
+            contFormCal.appendChild(inpCalSubect) ;
+
             const inpCalification = document.createElement('input') ;
-                inpCalification.className = 'inputForm' ;
-                inpCalification.placeholder = "Calification Student" ;
-                inpCalification.type = 'number' ;
-                contFormCal.appendChild(inpCalification) ;
+            inpCalification.className = 'inputForm' ;
+            inpCalification.placeholder = "Calification Student" ;
+            inpCalification.type = 'number' ;
+            contFormCal.appendChild(inpCalification) ;
+
             const btnCalPush = document.createElement('button') ;
-                btnCalPush.className = 'btnPush' ;
-                btnCalPush.innerHTML = "Push Calification" ;
-                contFormCal.appendChild(btnCalPush) ;
+            btnCalPush.className = 'btnPush' ;
+            btnCalPush.innerHTML = "Push Calification" ;
+            contFormCal.appendChild(btnCalPush) ;
+
         btnCalPush.addEventListener('click', () => {
-            if ( inpCalNameStudent.value === user4.firstname ) {
+            if (inpCalNameStudent.value === user4.firstname +" "+ user4.lastname) {
                 let newCal = {subject: inpCalSubect.value, calification: inpCalification.value} ;
                 arrayCalJuan.push(newCal) ;
-                console.log("Added Calification Juan Palma S.") ;
-                alert("Added Calification Juan Palma S.") ;
-            } else if ( inpCalNameStudent.value === user3.firstname ) {
+                console.log(user2.position +" "+ user2.firstname +" "+ user2.lastname +" "+ "Added Calification" +" "+ user4.firstname +" "+ user4.lastname) ;
+                alert("Added Calification" +" "+ inpCalSubect.value +" "+ inpCalification.value +" "+ user4.firstname +" "+ user4.lastname) ;
+            }
+            else if ( inpCalNameStudent.value === user3.firstname ) {
                 let newCal = {subject: inpCalSubect.value, calification: inpCalification.value} ;
                 arrayCalFernanda.push(newCal) ;
-                console.log("Added Calification Fernanda Molina F.") ;
-                alert("Added Calification Fernanda Molina F.") ;
-            } else {
+                console.log(user2.position +" "+ user2.firstname +" "+ user2.lastname +" "+ "Added Calification" +" "+ user3.firstname +" "+ user3.lastname) ;
+                alert("Added Calification" +" "+ inpCalSubect.value +" "+ inpCalification.value +" "+ user3.firstname +" "+ user3.lastname) ;
+            }
+            else {
                 console.log("Error Name Student") ;
                 alert("Error Name Student") ;
             }
@@ -116,27 +129,32 @@ function funElectionData() {
         const contFormExa = document.createElement('div') ;
             contFormExa.className = 'contFormPush' ;
             contAddData.appendChild(contFormExa) ;
-            const inpExaSubject = document.createElement('input') ;
+
+                const inpExaSubject = document.createElement('input') ;
                 inpExaSubject.className = 'inputForm' ;
                 inpExaSubject.placeholder = "Election Subject" ;
                 contFormExa.appendChild(inpExaSubject) ;
-            const inpExaDate = document.createElement('input') ;
+
+                const inpExaDate = document.createElement('input') ;
                 inpExaDate.className = 'inputForm' ;
                 inpExaDate.type = 'date' ;
                 contFormExa.appendChild(inpExaDate) ;
-            const inpExaReviw = document.createElement('textarea') ;
+
+                const inpExaReviw = document.createElement('textarea') ;
                 inpExaReviw.className = 'inpReviw' ;
                 inpExaReviw.placeholder = "Add You Reviw For Examn" ;
                 contFormExa.appendChild(inpExaReviw) ;
-            const btnExaPush = document.createElement('button') ;
+
+                const btnExaPush = document.createElement('button') ;
                 btnExaPush.className = 'btnPush' ;
                 btnExaPush.innerHTML = "Push Examn" ;
                 contFormExa.appendChild(btnExaPush) ;
+
         btnExaPush.addEventListener('click', () =>{
             let newExamn = {subject: inpExaSubject.value, date: inpExaDate.value, text: inpExaReviw.value} ;
             arrayExa.push(newExamn) ;
-            console.log("Added New Examn") ;
-            alert("Added New Examn") ;
+            console.log("Added New Examn" +" "+ inpExaSubject.value +" "+ inpExaDate.value) ;
+            alert(user2.position +" "+ user2.firstname +" "+ user2.lastname +" "+ "Added New Examn" +" "+ inpExaSubject.value +" "+ inpExaDate.value) ;
         })
     })
 
@@ -166,8 +184,8 @@ function funElectionData() {
         btnHWPush.addEventListener('click', () => {
             let newHW = {subject: inpHWSubject.value, date: inpHWData.value, text: inpHWReviw.value} ;
             arrayHW.push(newHW) ;
-            console.log("Added New HomeWork");
-            alert("Added New HomeWork")
+            console.log(user2.position +" "+ user2.firstname +" "+ user2.lastname +" "+ "Added New HomeWork" +" "+ inpHWSubject.value +" "+ inpHWData.value);
+            alert("Added New HomeWork" +" "+ inpHWSubject.value +" "+ inpHWData.value)
         })
     })
 
@@ -191,16 +209,16 @@ function funElectionData() {
                 btnNotPush.innerHTML = "Push Note" ;
                 contFormNot.appendChild(btnNotPush) ;
         btnNotPush.addEventListener('click', () => {
-            if ( inpNotNameSudent.value === user4.firstname ) {
+            if (inpNotNameSudent.value === user4.firstname +" "+ user4.lastname) {
                 let newNotJuan = {text: inpNotReviw.value}
                 arrayNotJuan.push(newNotJuan) ;
-                console.log("Added Note Juan Palma S.") ;
-                alert("Added Note Juan Palma S.") ;
-            } else if ( inpNotNameSudent.value === user3.firstname ) {
+                console.log(user2.position +" "+ user2.firstname +" "+ user2.lastname +" "+ "Added Note" +" "+ user4.firstname +" "+ user4.lastname) ;
+                alert("Added Note" +" "+ user4.firstname +" "+ user4.lastname) ;
+            } else if ( inpNotNameSudent.value === user3.firstname +" "+ user3.lastname) {
                 let newNotFer = {text: inpNotReviw.value} ;
                 arrayNotFernanda.push(newNotFer) ;
-                console.log("Added Note Fernanda Molina F.") ;
-                alert("Added Note Fernanda Molina F.") ;
+                console.log(user2.position +" "+ user2.firstname +" "+ user2.lastname +" "+ "Added Note" +" "+ user3.firstname +" "+ user3.lastname) ;
+                alert("Added Note" +" "+ user3.firstname +" "+ user3.lastname) ;
             } else {
                 console.log("Error Name Student") ;
                 alert("Error Name Student") ;
@@ -234,8 +252,8 @@ function funElectionData() {
         btnMeetPush.addEventListener('click', () => {
             let newMeet = {title: inpMeetTitle.value, date: inpMeetDate.value, text: inpMeetReviw.value} ;
             arrayMeet.push(newMeet) ;
-            console.log("Added New Meeting") ;
-            alert("Added New Meeting") ;
+            console.log(user2.position +" "+ user2.firstname +" "+ user2.lastname +" "+ "Added New Meeting" +" "+ inpMeetTitle.value +" "+ inpMeetDate.value) ;
+            alert("Added New Meeting" +" "+ inpMeetTitle.value +" "+ inpMeetDate.value) ;
         })
     })
 
@@ -265,8 +283,8 @@ function funElectionData() {
         btnActPush.addEventListener('click', () => {
             let newAct = {title: inpActTitle.value, date: inpActDate.value, text: inpActReviw.value} ;
             arrayAct.push(newAct) ;
-            console.log("Added Activity") ;
-            alert("Added activity") ;
+            console.log(user2.position +" "+ user2.firstname +" "+ user2.lastname +" "+ "Added Activity" +" "+ inpActTitle.value) ;
+            alert("Added activity" +" "+ inpActTitle.value +" "+ inpActDate.value) ;
         })
     })
 
@@ -298,9 +316,115 @@ function funElectionData() {
         btnMonPuch.addEventListener('click', () => {
             let newMon = {title: inpMonReason.value, debt: inpMonMoney.value, text: inpMonReviw.value} ;
             arrayMon.push(newMon) ;
-            console.log("Added Money") ;
-            alert("Added Money") ;
+            console.log( user2.position +" "+ user2.firstname +" "+user2.lastname +" "+ "Added Money" +" "+ inpMonReason.value +" "+"$"+ inpMonMoney.value) ;
+            alert("Added Money" +" "+ inpMonReason.value +" "+"$"+ inpMonMoney.value) ;
         })
-            
     })
+}
+
+
+function funDataUsers () {
+    const contAddData = document.getElementById('contAddData');
+    const titleData = document.getElementById('titleData');
+
+    const contElectionData = document.createElement('div') ;
+    contElectionData.className = 'contElectionData' ;
+    contAddData.appendChild(contElectionData) ;
+
+        const btnLookUsers = document.createElement('button') ;
+        btnLookUsers.className = 'btnAdd' ;
+        contElectionData.appendChild(btnLookUsers) ;
+            const imgLookUsers = document.createElement('img') ;
+            imgLookUsers.className = 'imgAdd' ;
+            imgLookUsers.src = imgcalifications ;
+            btnLookUsers.appendChild(imgLookUsers) ;
+                const textMenuLookUsers = document.createTextNode("Look Users") ;
+                btnLookUsers.appendChild(textMenuLookUsers) ;
+
+        btnLookUsers.addEventListener('click', () => {
+            const divUsers = document.createElement('div') ;
+            divUsers.className = 'divData' ;
+            divUsers.id = 'divUsers' ;
+                const titleUsers = document.createElement('h4') ;
+                titleUsers.innerHTML = "List Users" ;
+                titleUsers.className = 'titleData' ;
+                divUsers.appendChild( titleUsers )
+
+            users.forEach( use => {
+                const contUser = document.createElement('div') ;
+                let listUsers = document.createTextNode(`FIRSTNAME: ${use.firstname} ${use.lastname} | POSITION: ${use.position} | SEXO: ${use.sexo}`) ;
+                listUsers.className = 'textData' ;
+                mainDashboard.appendChild( divUsers ) ;
+                divUsers.appendChild( contUser ) ;
+                contUser.appendChild( listUsers ) ;
+            })
+            console.log(user1.position +" "+ user1.firstname +" "+ user1.lastname +" "+ "Print Users") ;
+            alert("Tus datos se imprimeron en el Dashboard") ;
+        })
+
+
+        const btnAddUser = document.createElement('button') ;
+        btnAddUser.className = 'btnAdd' ;
+        contElectionData.appendChild(btnAddUser) ;
+            const imgAddUser = document.createElement('img') ;
+            imgAddUser.className = 'imgAdd' ;
+            imgAddUser.src = imgcalifications ;
+            btnAddUser.appendChild(imgAddUser) ;
+                const textMenuAddUser = document.createTextNode("Add User") ;
+                btnAddUser.appendChild(textMenuAddUser) ;
+
+            btnAddUser.addEventListener('click', () => {
+                contElectionData.remove() ;
+                titleData.innerHTML = "Add User" ;
+
+                const contFormUsers = document.createElement('div') ;
+                contFormUsers.className = 'contFormPush' ;
+                contAddData.appendChild(contFormUsers) ;
+
+                    const inpAddUseFrist = document.createElement('input') ;
+                    inpAddUseFrist.className = 'inputForm' ;
+                    inpAddUseFrist.type = 'text' ;
+                    inpAddUseFrist.placeholder = "Type FristName" ;
+                    contFormUsers.appendChild(inpAddUseFrist) ;
+
+                    const inpAddUseLast = document.createElement('input') ;
+                    inpAddUseLast.className = 'inputForm' ;
+                    inpAddUseLast.placeholder = "Type LastName" ;
+                    inpAddUseLast.type = 'text' ;
+                    contFormUsers.appendChild(inpAddUseLast) ;
+
+                    const inpAddUsePosition = document.createElement('input') ;
+                    inpAddUsePosition.className = 'inputForm' ;
+                    inpAddUsePosition.placeholder = "Type Position" ;
+                    inpAddUsePosition.type = 'text' ;
+                    contFormUsers.appendChild(inpAddUsePosition) ;
+
+                    const inpAddUseSexo = document.createElement('input') ;
+                    inpAddUseSexo.className = 'inputForm' ;
+                    inpAddUseSexo.placeholder = "Type Sexo" ;
+                    inpAddUseSexo.type = 'text' ;
+                    contFormUsers.appendChild(inpAddUseSexo) ;
+
+                    const btnUserAddPush = document.createElement('button') ;
+                    btnUserAddPush.className = 'btnPush';
+                    btnUserAddPush.innerHTML = "Push User" ;
+                    contFormUsers.appendChild(btnUserAddPush);
+
+                    btnUserAddPush.addEventListener('click', () => {
+                    let newAplicationAdd = {firstname: inpAddUseFrist.value, lastname: inpAddUseLast.value, position: inpAddUsePosition.value, sexo: inpAddUseSexo.value} ;
+                    arrayAplicationAdd.push(newAplicationAdd) ;
+                    console.log( user1.position +" "+ user1.firstname +" "+user1.lastname +" "+ "Aplication Added User") ;
+                    alert("Aplication Added User" +" "+ inpAddUseFrist.value +" "+ inpAddUseLast.value +" "+ inpAddUsePosition.value +" "+ inpAddUseSexo.value) ;
+                })
+            })
+
+        const btnDelUser = document.createElement('button') ;
+        btnDelUser.className = 'btnAdd' ;
+        contElectionData.appendChild(btnDelUser) ;
+            const imgDelUser = document.createElement('img') ;
+            imgDelUser.className = 'imgAdd' ;
+            imgDelUser.src = imgcalifications ;
+            btnDelUser.appendChild(imgDelUser) ;
+                const textMenuDelUser= document.createTextNode("Delete User") ;
+                btnDelUser.appendChild(textMenuDelUser) ;
 }

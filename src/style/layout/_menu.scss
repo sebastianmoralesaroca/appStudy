@@ -3,9 +3,11 @@
     grid-template-rows: repeat( 8, 40px ) ;
     height: 90% ;
     margin-top: 3.125rem ;
+
     .menuBtn {
         @include mixBtnMenu ;
     }
+
     .menuBtnDelete {
         @include mixBtnMenu ;
         background-color: red ;

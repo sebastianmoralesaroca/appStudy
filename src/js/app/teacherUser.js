@@ -1,97 +1,10 @@
 function funUserTeacher() {
     const mainMenu = document.getElementById('mainMenu') ;
-    const menuCalifications = document.createElement('button') ;
-        mainMenu.appendChild( menuCalifications ) ;
-        menuCalifications.className = 'menuBtn' ;
-        menuCalifications.id = 'menuCalifications' ;
-        const img1 = document.createElement('img') ;
-            menuCalifications.appendChild( img1 ) ;
-            img1.className = 'menuImg' ;
-            img1.src = imgcalifications;
-            const textMenuCalifications = document.createTextNode("Califications") ;
-                menuCalifications.appendChild( textMenuCalifications ) ;
-    const menuExamn = document.createElement('button');
-        mainMenu.appendChild( menuExamn );
-        menuExamn.className ='menuBtn';
-        menuExamn.id = 'menuExamn' ;
-        const img2 = document.createElement('img');
-            menuExamn.appendChild( img2 );
-            img2.className = 'menuImg' ;
-            img2.src = imgExamn ;
-            const textMenuExamn = document.createTextNode("Examn") ;
-                menuExamn.appendChild( textMenuExamn );
-    const menuHomeWork = document.createElement('button');
-        mainMenu.appendChild( menuHomeWork );
-        menuHomeWork.className = 'menuBtn';
-        menuHomeWork.id = 'menuHomeWork';
-        const img3 = document.createElement('img');
-            menuHomeWork.appendChild( img3 );
-            img3.className = 'menuImg';
-            img3.src = imgtask;
-            const textMenuHomeWork = document.createTextNode("HomeWork") ;
-                menuHomeWork.appendChild( textMenuHomeWork ) ;
-    const menuNotes = document.createElement('button');
-        mainMenu.appendChild( menuNotes );
-        menuNotes.className = 'menuBtn';
-        menuNotes.id = 'menuNotes';
-        const img4 = document.createElement('img');
-            menuNotes.appendChild( img4 );
-            img4.className ='menuImg';
-            img4.src = imgcoment;
-            const textMenuNotes = document.createTextNode("Notes") ;
-                menuNotes.appendChild( textMenuNotes ) ;
-    const menuMeeting = document.createElement('button') ;
-        mainMenu.appendChild( menuMeeting ) ;
-        menuMeeting.className = 'menuBtn' ;
-        menuMeeting.id = 'menuMeeting' ;
-        const img5 = document.createElement('img') ;
-            menuMeeting.appendChild( img5 ) ;
-            img5.className = 'menuImg' ;
-            img5.src = imgMeeting ;
-            const textMenuMeeting = document.createTextNode("Meeting") ;
-                menuMeeting.appendChild( textMenuMeeting ) ;
-    const menuActivity = document.createElement('button') ;
-        mainMenu.appendChild( menuActivity ) ;
-        menuActivity.className = 'menuBtn' ;
-        menuActivity.id = 'menuActivity' ;
-        const img6 = document.createElement('img') ;
-            menuActivity.appendChild( img6 ) ;
-            img6.className = 'menuImg' ;
-            img6.src = imgActivity ;
-            const textMenuActivity = document.createTextNode("Activity") ;
-                menuActivity.appendChild( textMenuActivity ) ;
-    const menuMoney = document.createElement('button') ;
-        mainMenu.appendChild( menuMoney ) ;
-        menuMoney.className = 'menuBtn' ;
-        menuMoney.id = 'menuMoney' ;
-        const img7 = document.createElement('img') ;
-            menuMoney.appendChild( img7 ) ;
-            img7.className = 'menuImg' ;
-            img7.src = imgmoney ;
-            const textMenuMoney = document.createTextNode("Money") ;
-                menuMoney.appendChild( textMenuMoney ) ;
-    const menuDelete = document.createElement('button') ;
-        mainMenu.appendChild( menuDelete ) ;
-        menuDelete.className = 'menuBtnDelete' ;
-        menuDelete.id = 'menuDelete' ;
-        const img8 = document.createElement('img') ;
-            menuDelete.appendChild( img8 ) ;
-            img8.className = 'menuImg' ;
-            img8.src = imgdelete ;
-            const textMenuDelete = document.createTextNode("Clean") ;
-                menuDelete.appendChild( textMenuDelete ) ;
-    const btnAddWelcome = document.createElement('button') ;
-        mainWelcome.appendChild( btnAddWelcome ) ;
-        btnAddWelcome.className = 'btnAddWelcome' ;
-        const imgBtnWeolcome = document.createElement('img') ;
-            btnAddWelcome.appendChild( imgBtnWeolcome ) ;
-            imgBtnWeolcome.className = 'imgBtnWeolcome' ;
-            imgBtnWeolcome.src = imgAdd ;
-            const textBtnWelcome = document.createTextNode("Choose One Option")
-                btnAddWelcome.appendChild( textBtnWelcome ) ;
+    funButtonMenu();
 
     menuCalifications.addEventListener('click', () => {
         const divCal = document.createElement('div') ;
+            divCal.className = 'divData' ;
             divCal.id = 'divCal' ;
         const titleCalFer = document.createElement('h4') ;
             titleCalFer.innerHTML = "Califications " + user3.firstname ;
@@ -121,6 +34,7 @@ function funUserTeacher() {
 
     menuExamn.addEventListener('click', () => {
         const divExamn = document.createElement('div') ;
+            divExamn.className = 'divData' ;
             divExamn.id = 'divExamn' ;
         const titleExamn = document.createElement('h4') ;
             titleExamn.innerHTML = "Examns" ;
@@ -138,6 +52,7 @@ function funUserTeacher() {
 
     menuHomeWork.addEventListener('click', () => {
         const divHW = document.createElement('div') ;
+            divHW.className = 'divData' ;
             divHW.id = 'divHW' ;
         const titleHW = document.createElement('h4') ;
             titleHW.innerHTML = "HomeWork" ;
@@ -155,6 +70,7 @@ function funUserTeacher() {
 
     menuNotes.addEventListener('click', () => {
         const divNot = document.createElement('div') ;
+            divNot.className = 'divData' ;
             divNot.id = 'divHW' ;
         const titleNotFer = document.createElement('h4') ;
             titleNotFer.innerHTML = "Notes " + user3.firstname ;
@@ -184,6 +100,7 @@ function funUserTeacher() {
 
     menuMeeting.addEventListener('click', () => {
         const divMeeting = document.createElement('div') ;
+            divMeeting.className = 'divData' ;
             divMeeting.id = 'divMeeting' ;
         const titleMeet = document.createElement('h4') ;
             titleMeet.innerHTML = "Meetings" ;
@@ -201,6 +118,7 @@ function funUserTeacher() {
 
     menuActivity.addEventListener('click',()=>{
         const divActivity = document.createElement('div') ;
+            divActivity.className = 'divData' ;
             divActivity.id = 'divActivity' ;
         const titleAct = document.createElement('h4') ;
             titleAct.innerHTML = "Activitys" ;
@@ -218,6 +136,7 @@ function funUserTeacher() {
 
     menuMoney.addEventListener('click',()=>{
         const divMoney = document.createElement('div') ;
+            divMoney.className = 'divData' ;
             divMoney.id = 'divMoney' ;
         const titleMon = document.createElement('h4') ;
             titleMon.innerHTML = "Money" ;
@@ -239,8 +158,17 @@ function funUserTeacher() {
         }
     });
 
+    const btnAddWelcome = document.createElement('button') ;
+        mainWelcome.appendChild( btnAddWelcome ) ;
+        btnAddWelcome.className = 'btnAddWelcome' ;
+    const imgBtnWeolcome = document.createElement('img') ;
+        btnAddWelcome.appendChild( imgBtnWeolcome ) ;
+        imgBtnWeolcome.className = 'imgBtnWeolcome' ;
+        imgBtnWeolcome.src = imgAdd ;
+        const textBtnWelcome = document.createTextNode("Choose One Option")
+            btnAddWelcome.appendChild( textBtnWelcome ) ;
     btnAddWelcome.addEventListener('click',()=>{
-    const contAddData = document.createElement('div') ;
+        const contAddData = document.createElement('div') ;
             contAddData.className = 'contAddData' ;
             contAddData.id = 'contAddData' ;
             mainDivPrin.appendChild(contAddData) ;
