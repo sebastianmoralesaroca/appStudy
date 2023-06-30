@@ -4,3 +4,10 @@
     font-weight:400;
     color:$colBase;
 }
+
+@mixin fontTextApli {
+    font-family: $fontSans ;
+    font-size: 15px ;
+    font-weight: 400 ;
+    color: $colBase ;
+}

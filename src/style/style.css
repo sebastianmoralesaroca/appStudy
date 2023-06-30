@@ -668,6 +668,13 @@
   color: #f7f7f7;
   height: 60px;
 }
+.contAddData .textApli {
+  font-family: sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  color: #2b006e;
+  padding: 0px 30px 0px 30px;
+}
 
 @media screen and (max-width: 575px) and (orientation: portrait) {
   .loginContPricipal {

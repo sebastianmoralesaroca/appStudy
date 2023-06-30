@@ -9,13 +9,15 @@ const imgcalifications ='../../public/imgCalifications.png';
 const imgtask ='../../public/task.png';
 const imgmoney ='../../public/imgMoney.png';
 const imgexit ='../../public/exit.png';
-const imgAddUsers ='../../public/imgUsers.png';
+const imgUsers ='../../public/imgUsers.png';
 const imgAdd ='../../public/imgAddUsers.png'
 const imgcoment ='../../public/coment.png';
 const imgExamn = '../../public/imgExamn.png' ;
 const imgMeeting = '../../public/imgMeeting.png' ;
 const imgActivity = '../../public/imgActivity.png' ;
-
+const imgAddedUser = '../../public/imgAddedUser.png' ;
+const imgDeleteUser = '../../public/imgDeleteUser.png' ;
+const imgAplications = '../../public/imgAplications.png' ;
 
 // header
 const imgnotiComent ='../../public/comentario-alt.png';

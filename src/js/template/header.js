@@ -44,7 +44,7 @@ function funHeader(h,j) {
             headerDiv1.appendChild(headerLogo3);
             headerLogo3.id = 'headerLogo3';
             headerLogo3.className = 'headerLogo3';
-            headerLogo3.innerHTML = "Nine"
+            headerLogo3.innerHTML = "Seven"
 
         const headerDiv2 = document.createElement('div');
         heraderCont.appendChild(headerDiv2);

@@ -73,3 +73,7 @@ let arrayMon = [
 let arrayAplicationAdd = [
     {firstname: "Diego", lastname: "Campos",  position: "Student",  sexo: "Masculino"},
 ]
+
+let arrayAplicationDel = [
+    {firstname: "Victoria", lastname: "Montenegro",  position: "Student",  sexo: "Femenino"},
+]

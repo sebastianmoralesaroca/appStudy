@@ -1,0 +1,1 @@
+const textAplications = "Todas las solicitudes tiene un plazo de 5 dias habiles para poder ser ejecutadas. Si haz cometido un error y quieres desaser la peticion, simplemente tienes que realizar la accion conraria. Si ya pasaron los 5 dias habiles y tu solicitud aun no es ejecutada vuelve a realizar la peticion." ;
