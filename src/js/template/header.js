@@ -22,7 +22,8 @@ function funHeader(h,j) {
                 openMenu = openMenu + 1;
                 if (openMenu === 1) {
                     mainMenu.style ='display:inherit; z-index:1; grid-column:2;';
-                } else {
+                }
+                else {
                     openMenu = 0;
                     mainMenu.style ='display:none';
                 }
@@ -91,4 +92,39 @@ function funHeader(h,j) {
                 exitBtn.appendChild(exitImg);
                 exitImg.className = 'exitImg';
                 exitImg.src = imgexit;
+
+
+
+    let z = 0 ;
+    const contNoti = document.createElement('div') ;
+    contNoti.className = 'contNot' ;
+    headerBtnNoti.addEventListener('click', () => {
+        console.log("Open Notifications");
+        z = z + 1 ;
+        if (z === 1) {
+            titleNoti = document.createElement('h4') ;
+            titleNoti.className = 'titleNoti' ;
+            titleNoti.innerHTML = 'Notifications'
+            contNoti.appendChild(titleNoti) ;
+            arrayNotifications.forEach(noti => {
+                const ulNoti = document.createElement('ul') ;
+                let textNoti = document.createElement('p') ;
+                textNoti.className = 'textNoti' ;
+                let listNoti = document.createTextNode(`${noti.position} ${noti.name} added ${noti.category} of ${noti.subject}`) ;
+                textNoti.appendChild(listNoti) ;
+                headerDiv2.appendChild(contNoti) ;
+                contNoti.appendChild(ulNoti) ;
+                ulNoti.appendChild(textNoti) ;
+            });
+        }
+        else if (z === 2) {
+            contNoti.remove() ;
+            while (contNoti.firstChild) {
+                contNoti.removeChild(contNoti.firstChild) ;
+            }
+
+            z = 0 ;
+        }
+        else {}
+    })
 }

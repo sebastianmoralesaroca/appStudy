@@ -84,6 +84,30 @@
   width: 1.25rem;
   height: 1.25rem;
 }
+.body .heraderCont .headerDiv2 .contNot {
+  width: 400px;
+  height: 200px;
+  position: absolute;
+  margin-top: 270px;
+  border: solid 4px red;
+  border-radius: 10px;
+  background-color: #2b006e;
+  padding: 10px;
+  overflow: scroll;
+}
+.body .heraderCont .headerDiv2 .contNot .textNoti {
+  font-family: sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  color: white;
+  margin-top: 12px;
+}
+.body .heraderCont .headerDiv2 .contNot .titleNoti {
+  font-family: sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+  color: white;
+}
 .body .heraderCont .headerDiv2 .headerNamePerson {
   font-family: sans-serif;
   font-size: 1.25rem;

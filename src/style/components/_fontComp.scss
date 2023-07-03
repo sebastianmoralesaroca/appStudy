@@ -11,3 +11,18 @@
     font-weight: 400 ;
     color: $colBase ;
 }
+
+@mixin fontNotifications {
+    font-family: $fontSans ;
+    font-size: 16px ;
+    font-weight: 400 ;
+    color: white;
+    margin-top: 12px ;
+}
+
+@mixin fontTitleNot {
+    font-family: $fontSans ;
+    font-size: 20px ;
+    font-weight: 600 ;
+    color: white ;
+}

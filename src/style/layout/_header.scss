@@ -1,65 +1,97 @@
 .body {
+
     .heraderCont {
-        width:98%;
-        padding-left:1.25rem;
-        height:4.375rem;
-        display:flex;
-        justify-content:space-between;
+        width: 98% ;
+        padding-left: 1.25rem ;
+        height: 4.375rem ;
+        display: flex ;
+        justify-content: space-between ;
+
         .headerDiv1 {
-            display:flex;
-            align-items:center;
-            margin-left:3.125rem;
-            height:100%;
-            .menuBurger{
-                display:none;
+            display: flex ;
+            align-items: center ;
+            margin-left: 3.125rem ;
+            height: 100% ;
+
+            .menuBurger {
+                display: none ;
             }
+
             .headerLogo1 {
-                width:2.5rem;
-                height:2.5rem;
-                margin-right:1.25rem;
+                width: 2.5rem ;
+                height: 2.5rem ;
+                margin-right: 1.25rem ;
             }
+
             .headerLogo2 {
-                font-family:$fontSans;
-                font-size:1.875rem;
-                font-weight:700;
-                color:$colOrange;
-                display:inline;
-                margin-right:0.4375rem;
+                font-family: $fontSans ;
+                font-size: 1.875rem ;
+                font-weight: 700 ;
+                color: $colOrange ;
+                display: inline ;
+                margin-right: 0.4375rem ;
             }
+
             .headerLogo3 {
-                font-family:$fontSans;
-                font-size:1.875rem;
-                font-weight:700;
-                color:$colOrange;
-                display:inline;
+                font-family: $fontSans ;
+                font-size: 1.875rem ;
+                font-weight: 700 ;
+                color: $colOrange ;
+                display: inline ;
             }
         }
-        .headerDiv2{
-            display:flex;
-            align-items:center;
-            margin-right:3.125rem;
+
+        .headerDiv2 {
+            display: flex ;
+            align-items: center ;
+            margin-right: 3.125rem ;
+
             .headerBtnMessage {
-                @include mixBtnNoti;
+                @include mixBtnNoti ;
             }
+
             .headerBtnNoti {
-                margin-left:0.625rem;
-                @include mixBtnNoti;
+                margin-left: 0.625rem ;
+                @include mixBtnNoti ;
             }
+
+            .contNot {
+                width: 400px ;
+                height: 200px ;
+                position: absolute ;
+                margin-top: 270px ;
+                border: solid 4px red ;
+                border-radius: 10px ;
+                background-color: $colBase ;
+                padding: 10px ;
+                overflow: scroll ;
+
+                .textNoti {
+                    @include fontNotifications ;
+                }
+
+                .titleNoti {
+                    @include fontTitleNot ;
+                }
+            }
+
             .headerNamePerson {
-                font-family:$fontSans;
-                font-size:1.25rem;
-                font-weight:400;
-                color:$colSmoke;
-                display:inline;
-                margin-left:3.125rem;
+                font-family: $fontSans ;
+                font-size: 1.25rem ;
+                font-weight: 400 ;
+                color: $colSmoke ;
+                display: inline ;
+                margin-left: 3.125rem ;
             }
+
             .headerImgPerson {
-                width:2.5rem;
-                height:2.5rem;
-                margin-left:1.25rem;
+                width: 2.5rem ;
+                height: 2.5rem ;
+                margin-left: 1.25rem ;
             }
-            .exitBtn{
-                @include mixExit;
+
+            .exitBtn {
+                @include mixExit ;
             }
         }
     }

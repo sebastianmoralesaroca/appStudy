@@ -155,8 +155,12 @@ function funElectionData() {
                 contFormExa.appendChild(btnExaPush) ;
 
         btnExaPush.addEventListener('click', () =>{
-            let newExamn = {subject: inpExaSubject.value, date: inpExaDate.value, text: inpExaReviw.value} ;
+            let newExamn = { subject: inpExaSubject.value, date: inpExaDate.value, text: inpExaReviw.value } ;
             arrayExa.push(newExamn) ;
+
+            let newNoti = { position: user2.position, name: user2.firstname +" "+ user2.lastname, category: "Examn", subject: inpExaSubject.value } ;
+            arrayNotifications.push(newNoti) ;
+
             console.log("Added New Examn" +" "+ inpExaSubject.value +" "+ inpExaDate.value) ;
             alert(user2.position +" "+ user2.firstname +" "+ user2.lastname +" "+ "Added New Examn" +" "+ inpExaSubject.value +" "+ inpExaDate.value) ;
         })
@@ -520,7 +524,7 @@ function funDataUsers () {
             btnUserDelPush.className = 'btnPush';
             btnUserDelPush.innerHTML = "Push User" ;
             contFormUsers.appendChild(btnUserDelPush);
-        
+
         btnUserDelPush.addEventListener('click', () => {
             let newAplicationDel = {firstname: inpDelUseFrist.value, lastname: inpDelUseLast.value, position: inpDelUsePosition.value, sexo: inpDelUseSexo.value} ;
             arrayAplicationDel.push(newAplicationDel) ;
@@ -538,7 +542,7 @@ function funDataUsers () {
             titleUsers.innerHTML = "List Users" ;
             titleUsers.className = 'titleData' ;
             divUsers.appendChild( titleUsers )
-    
+
         users.forEach( use => {
             const contUser = document.createElement('div') ;
             let listUsers = document.createTextNode(`FIRSTNAME: ${use.firstname} ${use.lastname} | POSITION: ${use.position} | SEXO: ${use.sexo}`) ;

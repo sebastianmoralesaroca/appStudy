@@ -77,3 +77,7 @@ let arrayAplicationAdd = [
 let arrayAplicationDel = [
     {firstname: "Victoria", lastname: "Montenegro",  position: "Student",  sexo: "Femenino"},
 ]
+
+let arrayNotifications = [
+    {position: "Teacher", name: "Bruno Smith w.", category: "Califications", subject: "Math"},
+]
