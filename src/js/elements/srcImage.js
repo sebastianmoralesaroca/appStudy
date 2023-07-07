@@ -20,11 +20,11 @@ const imgDeleteUser = '../../public/imgDeleteUser.png' ;
 const imgAplications = '../../public/imgAplications.png' ;
 
 // header
-const imgnotiComent ='../../public/comentario-alt.png';
 const imglightbulb ='../../public/bombilla.png';
 const imgnotifications ='../../public/campana.png';
 const imgMenuBurger ='../../public/menu-hamburguesa.png';
 const imgCruz = '../../public/cruz.png' ;
+const imgContact = '../../public/contact.png' ;
 
 // notes person
 const imgdelete ='../../public/delete.png';

@@ -1,58 +1,58 @@
 @mixin mixInputNotes{
-    width:100%;
-    margin-bottom:3px;
-    height:20px;
-    border:solid 1px black;
-    border-radius:3px;
+    width: 100% ;
+    margin-bottom: 3px ;
+    height: 20px ;
+    border: solid 1px black ;
+    border-radius: 3px ;
 }
 
 @mixin mixNewNotes{
-    width:100%;
-    height:auto;
-    padding:0.3125rem 0.3125rem 0.3125rem 0.3125rem;
-    background-color:$colBase;
-    margin-top:0.1875rem;
-    border:solid 1px $colOrange;
-    border-radius:0.3125rem;
+    width: 100% ;
+    height: auto ;
+    padding: 0.3125rem 0.3125rem 0.3125rem 0.3125rem ;
+    background-color: $colBase ;
+    margin-top: 0.1875rem ;
+    border: solid 1px $colOrange ;
+    border-radius: 0.3125rem ;
     .ckeckNotes{
-        width:15px;
-        height:15px;
-        display:inline;
-        margin-right:0.4375rem;
+        width: 15px ;
+        height: 15px ;
+        display: inline ;
+        margin-right: 0.4375rem ;
     }
     .removeNotes{
-        width:15px;
-        height:15px;
-        background:transparent;
-        border:none;
-        display:inline;
+        width: 15px ;
+        height: 15px ;
+        background: transparent ;
+        border: none ;
+        display: inline ;
         .imgNotes{
-            width:15px;
-            height:15px
+            width: 15px ;
+            height: 15px ;
         }
     }
     .textNotes{
-        font-family:$fontSans;
-        font-size:15px;
-        font-weight:400;
-        color:$colSmoke;
-        display:block;
-        overflow:scroll;
-        text-overflow:ellipsis;
+        font-family: $fontSans ;
+        font-size: 15px ;
+        font-weight: 400 ;
+        color: $colSmoke ;
+        display: block ;
+        overflow: scroll ;
+        text-overflow: ellipsis ;
     }
 }
 
 @mixin mixInpNewUser{
-    width:100%;
-    height:40px;
-    border:none;
-    border-radius:10px;
-    display:block;
-    padding:7px 0px 7px 0px;
-    margin-bottom:5px;
-    font-family:$fontSans;
-    font-size:13px;
-    font-weight:400;
+    width: 100% ;
+    height: 40px ;
+    border: none ;
+    border-radius: 10px ;
+    display: block ;
+    padding: 7px 0px 7px 0px ;
+    margin-bottom: 5px ;
+    font-family: $fontSans ;
+    font-size: 13px ;
+    font-weight: 400 ;
 }
 
 @mixin inpPushData {

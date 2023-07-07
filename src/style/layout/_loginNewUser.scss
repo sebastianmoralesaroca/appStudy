@@ -1,26 +1,26 @@
 .contLoginNewUser{
-    background-color:$colBase;
-    border-radius:15px;
-    margin:auto;
-    width: 50%;
-    padding:20px;
-    margin-bottom:5px;
+    background-color: $colBase ;
+    border-radius: 15px ;
+    margin: auto ;
+    width: 50% ;
+    padding: 20px ;
+    margin-bottom: 5px ;
     .inputFirstName{
-        @include mixInpNewUser;
+        @include mixInpNewUser ;
     }
     .inputLastName{
-        @include mixInpNewUser;
+        @include mixInpNewUser ;
     }
     .inputPositions{
-        @include mixInpNewUser;
+        @include mixInpNewUser ;
     }
     .inputSexo{
-        @include mixInpNewUser;
+        @include mixInpNewUser ;
     }
     .inputId{
-        @include mixInpNewUser;
+        @include mixInpNewUser ;
     }
     .btnPushUser{
-        @include mixBtnPushUser;
+        @include mixBtnPushUser ;
     }
 }

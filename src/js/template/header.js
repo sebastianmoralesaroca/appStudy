@@ -52,15 +52,15 @@ function funHeader(h,j) {
         headerDiv2.id ='headerDiv2';
         headerDiv2.className ='headerDiv2';
 
-            const headerBtnMessage = document.createElement('button');
-            headerDiv2.appendChild(headerBtnMessage);
-            headerBtnMessage.id = 'headerBtnMessage';
-            headerBtnMessage.className = 'headerBtnMessage';
-                const headerImgBtnMessage = document.createElement('img');
-                headerBtnMessage.appendChild(headerImgBtnMessage)
-                headerImgBtnMessage.id = 'headerImgBtnMessage';
-                headerImgBtnMessage.className = 'headerImgBtnNoti'
-                headerImgBtnMessage.src = imgnotiComent;
+            const headerContact = document.createElement('button');
+            headerDiv2.appendChild(headerContact);
+            headerContact.id = 'headerContact';
+            headerContact.className = 'headerContact';
+                const imgHeaderContact = document.createElement('img');
+                headerContact.appendChild(imgHeaderContact)
+                imgHeaderContact.id = 'headerImgBtnMessage';
+                imgHeaderContact.className = 'headerImgBtnNoti'
+                imgHeaderContact.src = imgContact;
 
             const headerBtnNoti = document.createElement('button');
             headerDiv2.appendChild(headerBtnNoti);
@@ -115,15 +115,46 @@ function funHeader(h,j) {
                 headerDiv2.appendChild(contNoti) ;
                 contNoti.appendChild(ulNoti) ;
                 ulNoti.appendChild(textNoti) ;
-            });
+            })
         }
         else if (z === 2) {
             contNoti.remove() ;
             while (contNoti.firstChild) {
                 contNoti.removeChild(contNoti.firstChild) ;
             }
-
             z = 0 ;
+        }
+        else {}
+    })
+
+    let x = 0 ;
+    const contContact = document.createElement('div') ;
+    contContact.className = 'contContact' ;
+    headerContact.addEventListener('click', () => {
+        console.log("Open Contact") ;
+        x = x + 1 ;
+        if (x === 1) {
+            titleContact = document.createElement('h4') ;
+            titleContact.className = 'titleContact' ;
+            titleContact.innerHTML = "Contact School" ;
+            contContact.appendChild(titleContact) ;
+            arrayContact.forEach(con => {
+                const ulContact = document.createElement('ul') ;
+                let textContact = document.createElement('p') ;
+                textContact.className = 'textContact' ;
+                let listContact = document.createTextNode(`${con.nameContact} ${con.dataContact}`) ;
+                textContact.appendChild(listContact) ;
+                headerDiv2.appendChild(contContact) ;
+                contContact.appendChild(ulContact) ;
+                ulContact.appendChild(textContact) ;
+            });
+        }
+        else if (x === 2) {
+            contContact.remove() ;
+            while (contContact.firstChild) {
+                contContact.removeChild(contContact.firstChild) ;
+            }
+            x = 0 ;
         }
         else {}
     })

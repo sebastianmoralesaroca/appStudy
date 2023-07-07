@@ -13,12 +13,14 @@ function funUserAdmin() {
         divCal.appendChild( titleCalFer ) ;
 
         arrayCalFernanda.forEach(calFer => {
-            const contCalFer = document.createElement('div') ;
-            let listCalFer = document.createTextNode(`SUBJECT: ${calFer.subject} ${calFer.calification}`) ;
-            listCalFer.className = 'textData' ;
+            const contCalFer = document.createElement('ul') ;
+            let listCalFer = document.createTextNode(`${calFer.subject} ${calFer.calification}`) ;
+            const textData = document.createElement('li') ;
+            textData.className = 'textData' ;
+            textData.appendChild(listCalFer) ;
             mainDashboard.appendChild(divCal) ;
             divCal.appendChild(contCalFer) ;
-            contCalFer.appendChild(listCalFer) ;
+            contCalFer.appendChild(textData) ;
         });
         const titleCalJuan = document.createElement('h4') ;
         titleCalJuan.innerHTML = "Califications " + user4.firstname ;
@@ -26,12 +28,14 @@ function funUserAdmin() {
         divCal.appendChild(titleCalJuan) ;
 
         arrayCalJuan.forEach(calJuan => {
-            const contCalJuan = document.createElement('div') ;
-            let listCalJuan = document.createTextNode(`SUBJECT: ${calJuan.subject} ${calJuan.calification}`) ;
-            listCalJuan.className = 'textData' ;
+            const contCalJuan = document.createElement('ul') ;
+            let listCalJuan = document.createTextNode(`${calJuan.subject} ${calJuan.calification}`) ;
+            const textData = document.createElement('li') ;
+            textData.className = 'textData' ;
+            textData.appendChild(listCalJuan) ;
             mainDashboard.appendChild(divCal) ;
             divCal.appendChild(contCalJuan) ;
-            contCalJuan.appendChild(listCalJuan) ;
+            contCalJuan.appendChild(textData) ;
         });
     });
 
@@ -46,12 +50,14 @@ function funUserAdmin() {
         divExamn.appendChild( titleExamn ) ;
 
         arrayExa.forEach( exa => {
-            const contExamn = document.createElement('div') ;
-            let listExamn = document.createTextNode(`SUBJECT: ${exa.subject} | DATA: ${exa.date} | TEXT: ${exa.text}`) ;
-            listExamn.className = 'textData' ;
+            const contExamn = document.createElement('ul') ;
+            let listExamn = document.createTextNode(`${exa.subject} | ${exa.date} | ${exa.text}`) ;
+            const textData = document.createElement('li') ;
+            textData.className = 'textData' ;
+            textData.appendChild(listExamn)
             mainDashboard.appendChild( divExamn ) ;
-            divExamn.appendChild( contExamn ) ;
-            contExamn.appendChild( listExamn ) ;
+            divExamn.appendChild(contExamn) ;
+            contExamn.appendChild(textData) ;
         })
     })
 
@@ -66,12 +72,14 @@ function funUserAdmin() {
         divHW.appendChild( titleHW ) ;
 
         arrayHW.forEach(HW => {
-            const contHW = document.createElement('div');
-            let listHW = document.createTextNode(`SUBJECT: ${HW.subject} | DATA: ${HW.date} | TEXT: ${HW.text}`) ;
-            listHW.className = 'textData' ;
+            const contHW = document.createElement('ul');
+            let listHW = document.createTextNode(`${HW.subject} | ${HW.date} | ${HW.text}`) ;
+            const textData = document.createElement('li') ;
+            textData.className = 'textData' ;
+            textData.appendChild(listHW) ;
             mainDashboard.appendChild( divHW );
             divHW.appendChild( contHW ) ;
-            contHW.appendChild( listHW ) ;
+            contHW.appendChild( textData ) ;
         });
     });
 
@@ -86,12 +94,14 @@ function funUserAdmin() {
         divNot.appendChild( titleNotFer ) ;
 
         arrayNotFernanda.forEach(notFer => {
-            const contNotFer = document.createElement('div') ;
+            const contNotFer = document.createElement('ul') ;
             let listNotFer = document.createTextNode(`${notFer.text}`) ;
-            listNotFer.className = 'textData' ;
+            const textData = document.createElement('li') ;
+            textData.className = 'textData' ;
+            textData.appendChild(listNotFer) ;
             mainDashboard.appendChild(divNot) ;
             divNot.appendChild(contNotFer) ;
-            contNotFer.appendChild(listNotFer) ;
+            contNotFer.appendChild(textData) ;
         });
         const titleNotJuan = document.createElement('h4') ;
             titleNotJuan.innerHTML = "Notes " + user4.firstname ;
@@ -99,12 +109,14 @@ function funUserAdmin() {
             divNot.appendChild(titleNotJuan) ;
 
             arrayNotJuan.forEach(notJuan => {
-            const contNotJuan = document.createElement('div') ;
+            const contNotJuan = document.createElement('ul') ;
             let listNotJuan = document.createTextNode(`${notJuan.text}`) ;
-            listNotJuan.className = 'textData' ;
+            const textData = document.createElement('li') ;
+            textData.className = 'textData' ;
+            textData.appendChild(listNotJuan) ;
             mainDashboard.appendChild(divNot) ;
             divNot.appendChild(contNotJuan) ;
-            contNotJuan.appendChild(listNotJuan) ;
+            contNotJuan.appendChild(textData) ;
         });
     });
 
@@ -119,12 +131,14 @@ function funUserAdmin() {
         divMeeting.appendChild(titleMeet) ;
 
         arrayMeet.forEach(Meet => {
-            const contMeeting = document.createElement('div') ;
-            let listMeeting = document.createTextNode(`TITLE: ${Meet.title} | DATE: ${Meet.date} | TEXT: ${Meet.text}`) ;
-            listMeeting.className = 'textData' ;
+            const contMeeting = document.createElement('ul') ;
+            let listMeeting = document.createTextNode(`${Meet.title} | ${Meet.date} | ${Meet.text}`) ;
+            const textData = document.createElement('li') ;
+            textData.className = 'textData' ;
+            textData.appendChild(listMeeting) ;
             mainDashboard.appendChild(divMeeting);
             divMeeting.appendChild(contMeeting) ;
-            contMeeting.appendChild(listMeeting) ;
+            contMeeting.appendChild(textData) ;
         });
     });
 
@@ -139,12 +153,14 @@ function funUserAdmin() {
         divActivity.appendChild( titleAct ) ;
 
         arrayAct.forEach(act => {
-            const contActivity = document.createElement('div') ;
-            let listActivity = document.createTextNode(`ACTIVITY: ${act.title} | DATE: ${act.date} | TEXT ${act.text}`) ;
-            listActivity.className = 'textData' ;
+            const contActivity = document.createElement('ul') ;
+            let listActivity = document.createTextNode(`${act.title} | ${act.date} | ${act.text}`) ;
+            const textData = document.createElement('li') ;
+            textData.className = 'textData' ;
+            textData.appendChild(listActivity) ;
             mainDashboard.appendChild( divActivity ) ;
             divActivity.appendChild( contActivity ) ;
-            contActivity.appendChild( listActivity ) ;
+            contActivity.appendChild( textData ) ;
         })
     })
 
@@ -160,11 +176,13 @@ function funUserAdmin() {
 
         arrayMon.forEach(mon => {
             const contMoney = document.createElement('div') ;
-            let listMoney = document.createTextNode(`REASON ${mon.title} |  DEBT $${mon.debt} | TEXT ${mon.text}`) ;
-            listMoney.className = 'textData' ;
+            let listMoney = document.createTextNode(`${mon.title} | $${mon.debt} | ${mon.text}`) ;
+            const textData = document.createElement('li') ;
+            textData.className = 'textData' ;
+            textData.appendChild(listMoney) ;
             mainDashboard.appendChild( divMoney ) ;
             divMoney.appendChild( contMoney ) ;
-            contMoney.appendChild( listMoney ) ;
+            contMoney.appendChild( textData ) ;
             })
     })
 

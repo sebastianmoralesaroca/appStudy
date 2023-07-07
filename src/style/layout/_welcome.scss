@@ -1,34 +1,38 @@
 .mainWelcome{
-    width: 91%;
-    height: auto;
-    background-color: $colOrange;
-    margin: auto;
-    margin-top: 1.25rem;
-    border: none;
-    border-radius: 10px;
-    padding: 1.25rem;
-    display: grid;
-    grid-template-columns: 70% 30%;
-    .mainWelcomeTitle{
-        grid-column: 1;
-        grid-row: 1;
-        font-family: $fontSerif;
-        font-size: 2.9375rem;
-        font-weight: 600;
-        color: $colBase;
-        margin-bottom: 0px;
+    width: 91% ;
+    height: auto ;
+    background-color: $colOrange ;
+    margin: auto ;
+    margin-top: 1.25rem ;
+    border: none ;
+    border-radius: 10px ;
+    padding: 1.25rem ;
+    display: grid ;
+    grid-template-columns: 70% 30% ;
+
+    .mainWelcomeTitle {
+        grid-column: 1 ;
+        grid-row: 1 ;
+        font-family: $fontSerif ;
+        font-size: 2.9375rem ;
+        font-weight: 600 ;
+        color: $colBase ;
+        margin-bottom: 0px ;
     }
-    .mainWelcomeText{
-        grid-column: 1;
-        grid-row: 2;
-        @include mixFontText;
+
+    .mainWelcomeText {
+        grid-column: 1 ;
+        grid-row: 2 ;
+        @include mixFontText ;
     }
-    .mainWelcomeImg{
-        grid-column: 2;
-        grid-row: 1 / 3;
-        @include mixImgWelc;
+
+    .mainWelcomeImg {
+        grid-column: 2 ;
+        grid-row: 1 / 3 ;
+        @include mixImgWelc ;
     }
-    .btnAddWelcome{
+
+    .btnAddWelcome {
         @include mixBtnAddWelcome ;
     }
 }

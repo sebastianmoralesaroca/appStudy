@@ -1,19 +1,28 @@
 
 // Media Mobile Default
 @media screen and (max-width: $media-small) and (orientation:portrait) {
-    .loginContPricipal {
-        margin-top:20px;
-        .loginTitle {
-            font-size:30px;
-        }
-        .loginText1 {
-            font-size:18px;
-        }
-        .loginContSecond {
-            width:90%;
-        }
-        .loginForm {
-            width:80%;
+    .body {
+        .loginContPricipal {
+            .loginTitle {}
+            .loginText1 {}
+            .loginContSecond {
+                width: 100% ;
+                .loginImgParents {}
+                .loginSpanParents {}
+                .loginImgStudent {}
+                .loginSpanStudent {}
+                .loginImgTeacher {}
+                .loginSpanTeacher {}
+            }
+            .loginForm {
+                width: 90% ;
+                .loginUsername {}
+                .loginSignin {}
+                .loginText2 {
+                    .loginText2A {}
+                }
+            }
+            .buttonEnter {}
         }
     }
 }

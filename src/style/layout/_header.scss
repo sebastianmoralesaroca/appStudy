@@ -46,8 +46,28 @@
             align-items: center ;
             margin-right: 3.125rem ;
 
-            .headerBtnMessage {
+            .headerContact {
                 @include mixBtnNoti ;
+            }
+
+            .contContact {
+                width: 400px ;
+                height: 200px ;
+                position: absolute ;
+                margin-top: 270px ;
+                border: solid 4px red ;
+                border-radius: 10px ;
+                background-color: $colBase ;
+                padding: 10px ;
+                overflow: scroll ;
+
+                .titleContact {
+                    @include fontTitleNot ;
+                }
+
+                .textContact {
+                    @include fontNotifications ;
+                }
             }
 
             .headerBtnNoti {

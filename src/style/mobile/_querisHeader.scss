@@ -1,0 +1,55 @@
+@media screen and (max-width: $media-small) and (orientation:portrait) {
+    .body {
+
+        .heraderCont {
+
+            .headerDiv1 {
+
+                .menuBurger {}
+
+                .headerLogo1 {}
+
+                .headerLogo2 {}
+
+                .headerLogo3 {
+
+                    display: none ;
+
+                }
+
+            }
+
+            .headerDiv2 {
+
+                .headerContact {}
+
+                .contContact {
+
+                    .titleContact {}
+
+                    .textContact {}
+
+                }
+
+                .headerBtnNoti {}
+
+                .contNot {
+
+                    .textNoti {}
+
+                    .titleNoti {}
+
+                }
+
+                .headerNamePerson {}
+
+                .headerImgPerson {}
+
+                .exitBtn {}
+
+            }
+
+        }
+
+    }
+}

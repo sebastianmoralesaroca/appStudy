@@ -63,15 +63,39 @@
   align-items: center;
   margin-right: 3.125rem;
 }
-.body .heraderCont .headerDiv2 .headerBtnMessage {
+.body .heraderCont .headerDiv2 .headerContact {
   background: transparent;
   padding: 0.4375rem;
   border: 0px solid white;
   border-radius: 50%;
 }
-.body .heraderCont .headerDiv2 .headerBtnMessage .headerImgBtnNoti {
+.body .heraderCont .headerDiv2 .headerContact .headerImgBtnNoti {
   width: 1.25rem;
   height: 1.25rem;
+}
+.body .heraderCont .headerDiv2 .contContact {
+  width: 400px;
+  height: 200px;
+  position: absolute;
+  margin-top: 270px;
+  border: solid 4px red;
+  border-radius: 10px;
+  background-color: #2b006e;
+  padding: 10px;
+  overflow: scroll;
+}
+.body .heraderCont .headerDiv2 .contContact .titleContact {
+  font-family: sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+  color: white;
+}
+.body .heraderCont .headerDiv2 .contContact .textContact {
+  font-family: sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  color: white;
+  margin-top: 12px;
 }
 .body .heraderCont .headerDiv2 .headerBtnNoti {
   margin-left: 0.625rem;
@@ -500,6 +524,20 @@
   height: 100%;
   border-radius: 10px 0px 0px 10px;
 }
+.mainContPrin .mainDivPrin .titleData {
+  font-family: sans-serif;
+  font-size: 22px;
+  font-weight: 700;
+  color: #2b006e;
+}
+.mainContPrin .mainDivPrin .textData {
+  font-family: sans-serif;
+  font-size: 15px;
+  font-weight: 600;
+  color: #2b006e;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
 .mainContPrin .mainDivSecond {
   width: 95%;
   height: 100%;
@@ -701,20 +739,11 @@
 }
 
 @media screen and (max-width: 575px) and (orientation: portrait) {
-  .loginContPricipal {
-    margin-top: 20px;
+  .body .loginContPricipal .loginContSecond {
+    width: 100%;
   }
-  .loginContPricipal .loginTitle {
-    font-size: 30px;
-  }
-  .loginContPricipal .loginText1 {
-    font-size: 18px;
-  }
-  .loginContPricipal .loginContSecond {
+  .body .loginContPricipal .loginForm {
     width: 90%;
-  }
-  .loginContPricipal .loginForm {
-    width: 80%;
   }
 }
 @media screen and (min-width: 575px) and (max-width: 990px) and (orientation: portrait) {
@@ -867,5 +896,10 @@
     margin-left: 0.3125rem;
     vertical-align: text-top;
     margin-right: 0.625rem;
+  }
+}
+@media screen and (max-width: 575px) and (orientation: portrait) {
+  .body .heraderCont .headerDiv1 .headerLogo3 {
+    display: none;
   }
 }/*# sourceMappingURL=style.css.map */
