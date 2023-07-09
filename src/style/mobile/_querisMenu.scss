@@ -10,3 +10,18 @@
         }
     }
 }
+
+
+// Media Mobile Default
+@media screen and (max-width: $media-small) and (orientation:portrait) {
+    .mainMenu {
+        display: grid ;
+        grid-template-rows:repeat(8, 40px) ;
+        height: 90% ;
+        margin-top: 15px ;
+        margin-bottom: 25px ;
+        .menuBtn {
+            @include mixBtnMenu ;
+        }
+    }
+}

@@ -28,4 +28,7 @@ const imgContact = '../../public/contact.png' ;
 
 // notes person
 const imgdelete ='../../public/delete.png';
-const imgRemove ='../../public/';
+const imgRemove ='../../public/remove.png';
+
+// image
+const imgThemeHallowen = '../../public/themeHallowen.jpg' ;

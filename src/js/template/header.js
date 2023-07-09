@@ -127,6 +127,7 @@ function funHeader(h,j) {
         else {}
     })
 
+
     let x = 0 ;
     const contContact = document.createElement('div') ;
     contContact.className = 'contContact' ;
@@ -157,5 +158,10 @@ function funHeader(h,j) {
             x = 0 ;
         }
         else {}
+    })
+
+    exitBtn.addEventListener('click', () => {
+        console.log("log");
+        window.location.href= 'http://127.0.0.1:5500/src/page/' ;
     })
 }

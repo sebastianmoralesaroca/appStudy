@@ -97,7 +97,7 @@
         }
         .mainWelcome {
             width: 88% ;
-            height: 6.25rem ;
+            height: 120px ;
             .mainWelcomeTitle {
                 font-size: 1.625rem ;
                 margin-bottom: 1px ;
@@ -108,6 +108,9 @@
             .mainWelcomeImg {
                 width: 6.25rem ;
                 height: 6.25rem ;
+            }
+            .btnAddWelcome {
+                width: 12.5rem ;
             }
         }
         .secondCalificatios {

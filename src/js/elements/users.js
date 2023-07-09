@@ -8,10 +8,10 @@ function userName(firstname, lastname, position, sexo, id) {
 
 let users = [];
 
-const user1 = new userName("Sebastian", "Morales H.", "Directory", "Masculino", "dir") ;
-const user2 = new userName("Sarah", "Santander G.", "Teacher", "Femenino", "tea") ;
-const user3 = new userName("Fernanda", "Molina F.", "Student", "Femenino", "sf") ;
-const user4 = new userName("Juan", "Palma S.", "Student", "Masculino", "sm") ;
+const user1 = new userName("Sebastian", "Morales H.", "Directory", "Masculino", "dir4736") ;
+const user2 = new userName("Sarah", "Santander G.", "Teacher", "Femenino", "tea4798") ;
+const user3 = new userName("Fernanda", "Molina F.", "Student", "Femenino", "sf1262") ;
+const user4 = new userName("Juan", "Palma S.", "Student", "Masculino", "sm4793") ;
 
 users.push(user1) ;
 users.push(user2) ;

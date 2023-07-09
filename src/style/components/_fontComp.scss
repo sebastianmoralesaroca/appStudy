@@ -42,3 +42,10 @@
     font-weight: 700 ;
     color: $colBase ;
 }
+
+@mixin fontTitleTheme {
+    font-family: $fontSans ;
+    font-size: 35px ;
+    font-weight: 700 ;
+    color: whiteSmoke ;
+}

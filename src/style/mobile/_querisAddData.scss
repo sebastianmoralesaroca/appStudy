@@ -1,0 +1,25 @@
+// Media Mobile Default
+@media screen and (max-width: $media-small)  {
+    .contAddData {
+        .headerData {
+            .titleData {
+                font-size: 27px ;
+                margin: 10% ;
+            }
+            .removeElection {
+                .imgRemoveElection {}
+            }
+        }
+        .contElectionData {
+            width: 90% ;
+            .btnAdd {}
+        }
+        .contFormPush {
+            width: 90% ;
+            .inputForm {}
+            .inpReviw {}
+            .btnPush {}
+        }
+        .textApli {}
+    }
+}

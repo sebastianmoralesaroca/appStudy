@@ -1,4 +1,4 @@
-.secondCalificatios{
+.secondTheme{
     width: 88% ;
     height: 47% ;
     background-color: $colGrey ;
@@ -6,4 +6,21 @@
     border-radius: 10px ;
     margin-bottom: 10px ;
     padding: 10px ;
+    background: 
+    /* top, transparent black, faked with gradient */ 
+    linear-gradient( 
+      rgba(0, 0, 0, 0.6), 
+      rgba(0, 0, 0, 0.6) 
+    ), 
+    /* bottom, image */ 
+    url(../../../public/themeHallowen.jpg); 
+    background-size: 100%; 
+    display:block; 
+    margin:center; 
+
+    .titleTheme {
+        @include fontTitleTheme ;
+        margin-top: 30px ;
+        line-height: 60px ;
+    }
 }

@@ -47,7 +47,12 @@ function funMain(h,j,k) {
 
             const secondCalificatios = document.createElement('div');
             mainDivSecond.appendChild(secondCalificatios);
-            secondCalificatios.className ='secondCalificatios';
+            secondCalificatios.className ='secondTheme';
+
+                const titleTheme = document.createElement('h4') ;
+                secondCalificatios.appendChild(titleTheme) ;
+                titleTheme.className = 'titleTheme' ;
+                titleTheme.innerHTML = textHallowen ;
 
             const secondNotes = document.createElement('div');
             mainDivSecond.appendChild(secondNotes);

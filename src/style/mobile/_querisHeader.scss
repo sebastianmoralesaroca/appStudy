@@ -1,55 +1,68 @@
+// mobil default
 @media screen and (max-width: $media-small) and (orientation:portrait) {
     .body {
-
         .heraderCont {
-
             .headerDiv1 {
-
                 .menuBurger {}
-
                 .headerLogo1 {}
-
                 .headerLogo2 {}
-
                 .headerLogo3 {
-
                     display: none ;
-
                 }
-
             }
-
             .headerDiv2 {
-
                 .headerContact {}
-
                 .contContact {
-
+                    width: 19.6875rem ;
+                    margin-left: -3.75rem ;
                     .titleContact {}
-
                     .textContact {}
-
                 }
-
                 .headerBtnNoti {}
-
                 .contNot {
-
+                    width: 19.6875rem ;
+                    margin-left: -60px ;
                     .textNoti {}
-
                     .titleNoti {}
-
                 }
-
                 .headerNamePerson {}
-
                 .headerImgPerson {}
-
                 .exitBtn {}
-
             }
-
         }
+    }
+}
 
+
+// Media Tablet
+@media screen and (min-width: $media-small) and (max-width: $media-medium) and (orientation:portrait) {
+    .body {
+        .heraderCont {
+            .headerDiv1 {
+                .menuBurger {}
+                .headerLogo1 {}
+                .headerLogo2 {}
+                .headerLogo3 {}
+            }
+            .headerDiv2 {
+                .headerContact {}
+                .contContact {
+                    width: 26.875rem ;
+                    margin-left: -11.25rem ;
+                    .titleContact {}
+                    .textContact {}
+                }
+                .headerBtnNoti {}
+                .contNot {
+                    width: 26.875rem ;
+                    margin-left: -11.25rem ;
+                    .textNoti {}
+                    .titleNoti {}
+                }
+                .headerNamePerson {}
+                .headerImgPerson {}
+                .exitBtn {}
+            }
+        }
     }
 }
